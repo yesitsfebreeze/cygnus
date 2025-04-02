@@ -1,0 +1,130 @@
+layout: {zmk_keyboard: cygnus}
+layers:
+  BASE:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - {t: Y, h: Ctl+Y}
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: LEFT SHIFT}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: LEFT GUI}
+  - {t: F, h: LCTRL}
+  - G
+  - H
+  - {t: J, h: RCTRL}
+  - {t: K, h: LEFT GUI}
+  - {t: L, h: RIGHT ALT}
+  - {t: ENTER, h: LEFT SHIFT, s: BACKSPACE}
+  - {t: Z, h: Ctl+Z}
+  - {t: X, h: Ctl+X}
+  - {t: C, h: Ctl+C}
+  - {t: V, h: Ctl+V}
+  - {t: SPACE, h: LOWER}
+  - {t: SPACE, h: RAISE}
+  - B
+  - N
+  - M
+  - {t: _, s: DEL}
+  LOWER:
+  - {t: ESC, s: '`'}
+  - HOME
+  - UP
+  - END
+  - {t: '[', s: <}
+  - {t: ']', s: '>'}
+  - {t: '&', s: '&ma_and'}
+  - {t: '|', s: '&ma_or'}
+  - '&ma_pointer'
+  - '='
+  - {t: TAB, h: LSHIFT}
+  - LEFT
+  - DOWN
+  - RIGHT
+  - {t: (, s: '{'}
+  - {t: ), s: '}'}
+  - LALT
+  - {t: ;, h: LGUI, s: ':'}
+  - {t: '"', h: LCTRL, s: ''''}
+  - {t: BACKSPACE, h: LEFT SHIFT, s: ENTER}
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - {type: held}
+  - {t: SPACE, h: COMBO}
+  - {t: /, s: \}
+  - {t: ',', s: '!'}
+  - {t: ., s: '?'}
+  - '-'
+  RAISE:
+  - {t: ESC, s: '`'}
+  - '!'
+  - '@'
+  - '#'
+  - KP SUBTRACT
+  - KP PLUS
+  - '1'
+  - '2'
+  - '3'
+  - '='
+  - {t: TAB, h: LSHIFT}
+  - $
+  - '%'
+  - ^
+  - KP DIVIDE
+  - KP MULTIPLY
+  - {t: '4', h: LALT, s: $}
+  - {t: '5', h: RGUI}
+  - {t: '6', h: RCTRL, s: ^}
+  - {t: BACKSPACE, h: LEFT SHIFT, s: ENTER}
+  - ''
+  - '&'
+  - '*'
+  - '~'
+  - {t: SPACE, h: COMBO}
+  - {type: held}
+  - '7'
+  - '8'
+  - {t: '9', s: '~'}
+  - {t: '0', s: DEL}
+  COMBO:
+  - {t: ESC, s: '`'}
+  - '&mkp LCLK'
+  - '&mmv MOVE_VERT(-1000)'
+  - '&mkp RCLK'
+  - ''
+  - ''
+  - F1
+  - F2
+  - F3
+  - ''
+  - {t: TAB, h: LSHIFT}
+  - '&mmv MOVE_HOR(-1000)'
+  - '&mmv MOVE_VERT(1000)'
+  - '&mmv MOVE_HOR(1000)'
+  - ''
+  - ''
+  - F4
+  - F5
+  - F6
+  - {t: ENTER, h: LSHIFT}
+  - '&bootloader'
+  - '&mwh SCROLL_VERT(30)'
+  - '&mkp MCLK'
+  - '&mwh SCROLL_VERT(-30)'
+  - {type: held}
+  - {type: held}
+  - F7
+  - F8
+  - F9
+  - ''
+combos:
+- p: [24, 0]
+  k: Alt+TAB
+  l: [LOWER]
