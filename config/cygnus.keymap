@@ -1,5 +1,5 @@
-#include <behaviors.dtsi>
 #include "./mouse.h"
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
 /* Layers */
@@ -318,10 +318,10 @@
 
         BASE {
             bindings = <
-&none &none &none &none &none    &none &none &none &none &none
-&none &none &none &none &none    &none &none &none &none &none
-&none &none &none &none &none    &none &none &none &none &none
-            &none &none &none    &none &none &none 
+&kp Q  &kp W  &kp W  &kp E  &kp R      &kp T      &kp Y  &kp U  &kp I  &kp P
+&kp A  &kp S  &kp D  &kp F  &kp G      &kp H      &kp J  &kp K  &kp L  &none
+&kp Z  &kp X  &kp C  &kp V  &kp B      &kp M      &kp N  &none  &none  &none
+              &none  &none  &kp SPACE  &kp ENTER  &none  &none
             >;
 
             label = "BASE";
@@ -329,10 +329,10 @@
 
         LOWER {
             bindings = <
-&none &none &none &none &none    &none &none &none &none &none
-&none &none &none &none &none    &none &none &none &none &none
-&none &none &none &none &none    &none &none &none &none &none
-            &none &none &none    &none &none &none 
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+              &none  &none  &none  &none  &none  &none
             >;
 
             label = "LOWER";
@@ -340,10 +340,10 @@
 
         RAISE {
             bindings = <
-&none &none &none &none &none    &none &none &none &none &none
-&none &none &none &none &none    &none &none &none &none &none
-&none &none &none &none &none    &none &none &none &none &none
-            &none &none &none    &none &none &none 
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+              &none  &none  &none  &none  &none  &none
             >;
 
             label = "RAISE";
@@ -351,10 +351,10 @@
 
         COMBO {
             bindings = <
-&none &none &none &none &none    &none &none &none &none &none
-&none &none &none &none &none    &none &none &none &none &none
-&none &none &none &none &none    &none &none &none &none &none
-            &none &none &none    &none &none &none 
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+              &none  &none  &none  &none  &none  &none
             >;
 
             label = "COMBO";
