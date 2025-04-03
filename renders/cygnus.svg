@@ -1,4 +1,4 @@
-<svg width="822" height="1478" viewBox="0 0 822 1478" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="822" height="1422" viewBox="0 0 822 1422" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <style>/* inherit to force styles through use tags */
 svg path {
     fill: inherit;
@@ -260,11 +260,11 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
 </g>
-<g transform="translate(484, 249) rotate(-30.0)" class="key keypos-33">
+<g transform="translate(480, 235) rotate(-30.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
 </g>
-<g transform="translate(545, 231) rotate(-15.0)" class="key keypos-34">
+<g transform="translate(544, 223) rotate(-15.0)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(606, 215)" class="key keypos-35">
@@ -272,7 +272,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 355)" class="layer-LOWER">
+<g transform="translate(30, 341)" class="layer-LOWER">
 <text x="0" y="28" class="label" id="LOWER">LOWER:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(45, 49)" class="key keypos-0">
@@ -374,10 +374,10 @@ path.combo {
 <g transform="translate(282, 235) rotate(30.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 </g>
-<g transform="translate(484, 249) rotate(-30.0)" class="key keypos-33">
+<g transform="translate(480, 235) rotate(-30.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 </g>
-<g transform="translate(545, 231) rotate(-15.0)" class="key keypos-34">
+<g transform="translate(544, 223) rotate(-15.0)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(606, 215)" class="key keypos-35">
@@ -391,7 +391,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 711)" class="layer-RAISE">
+<g transform="translate(30, 683)" class="layer-RAISE">
 <text x="0" y="28" class="label" id="RAISE">RAISE:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(45, 49)" class="key keypos-0">
@@ -493,10 +493,10 @@ path.combo {
 <g transform="translate(282, 235) rotate(30.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 </g>
-<g transform="translate(484, 249) rotate(-30.0)" class="key keypos-33">
+<g transform="translate(480, 235) rotate(-30.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 </g>
-<g transform="translate(545, 231) rotate(-15.0)" class="key keypos-34">
+<g transform="translate(544, 223) rotate(-15.0)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(606, 215)" class="key keypos-35">
@@ -504,7 +504,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1066)" class="layer-COMBO">
+<g transform="translate(30, 1024)" class="layer-COMBO">
 <text x="0" y="28" class="label" id="COMBO">COMBO:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(45, 49)" class="key keypos-0">
@@ -606,10 +606,10 @@ path.combo {
 <g transform="translate(282, 235) rotate(30.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 </g>
-<g transform="translate(484, 249) rotate(-30.0)" class="key keypos-33">
+<g transform="translate(480, 235) rotate(-30.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 </g>
-<g transform="translate(545, 231) rotate(-15.0)" class="key keypos-34">
+<g transform="translate(544, 223) rotate(-15.0)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(606, 215)" class="key keypos-35">
