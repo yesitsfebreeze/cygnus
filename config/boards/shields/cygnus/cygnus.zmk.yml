@@ -1,6 +1,6 @@
 file_format: "1"
 id: cygnus
-name: Cygnus
+name: cygnus keyboard
 type: shield
 requires: [pro_micro]
 exposes: [i2c_oled]
