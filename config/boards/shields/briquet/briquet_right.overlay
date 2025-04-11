@@ -1,4 +1,4 @@
-#include "cygnus.dtsi"
+#include "briquet.dtsi"
 
 &default_transform {
 	col-offset = <5>;

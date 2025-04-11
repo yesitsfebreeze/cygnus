@@ -4,17 +4,19 @@ config ZMK_BLE
 config ZMK_USB
     default y
 
-if SHIELD_CYGNUS_LEFT
+if SHIELD_BRIQUET_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "Cygnus"
+	default "Briquet"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
+
 endif
 
-if SHIELD_CYGNUS_LEFT || SHIELD_CYGNUS_RIGHT
+if SHIELD_BRIQUET_LEFT || SHIELD_BRIQUET_RIGHT
 
 config ZMK_SPLIT
     default y
+
 endif
