@@ -1,8 +1,8 @@
 config ZMK_BLE
-	default y
+    default y
 
 config ZMK_USB
-	default y
+    default y
 
 if SHIELD_CYGNUS_LEFT
 
@@ -10,13 +10,13 @@ config ZMK_KEYBOARD_NAME
 	default "cygnus"
 
 config ZMK_SPLIT_ROLE_CENTRAL
-	default y
+    default y
 
 endif
 
 if SHIELD_CYGNUS_LEFT || SHIELD_CYGNUS_RIGHT
 
 config ZMK_SPLIT
-	default y
+    default y
 
 endif
