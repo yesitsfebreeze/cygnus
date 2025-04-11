@@ -21,19 +21,17 @@
             tapping-term-ms = <125>;
             flavor = "tap-preferred";
         };
-
     };
-
 
     keymap {
         compatible = "zmk,keymap";
 
         BASE {
             bindings = <
-&kp Q             &kp W           &kp E           &kp R        &kp T        &ht LC(Y) Y  &kp U        &kp I           &kp O            &kp P
-&ht LEFT_SHIFT A  &ht LEFT_ALT S  &ht LEFT_GUI D  &ht LCTRL F  &kp G        &kp H        &ht RCTRL J  &ht LEFT_GUI K  &ht RIGHT_ALT L  &kp M 
-&ht LC(Z) Z       &ht LC(X) X     &ht LC(C) C     &ht LC(V) V  &lt 1 SPACE  &lt 2 SPACE  &kp B        &kp N           &kp M            &kp M 
-                                  &lt 1 SPACE     &lt 2 SPACE  &kp B        &kp N        &kp M        &kp M 
+&kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A
+&kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B &kp B
+&kp C &kp C &kp C &kp C &kp C &kp C &kp C &kp C &kp C &kp C
+            &kp D &kp D &kp D &kp D &kp D &kp D
             >;
 
             label = "BASE";
