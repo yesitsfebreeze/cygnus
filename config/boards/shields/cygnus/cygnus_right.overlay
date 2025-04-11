@@ -1,5 +1,0 @@
-#include "cygnus.dtsi"
-
-&default_transform {
-	col-offset = <5>;
-};
