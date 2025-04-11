@@ -1,0 +1,6 @@
+config SHIELD_CYGNUS_LEFT
+	def_bool $(shield_list_contains, cygnus_left)
+
+config SHIELD_CYGNUS_RIGHT
+	def_bool $(shield_list_contains, cygnus_right)
+	
