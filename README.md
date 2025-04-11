@@ -1,4 +1,4 @@
-# Briquet
+# cygnus
 This is a small footprint wireless 30% keyboard.  
 The default layout aims to be very consistent to a querty layout.  
 
@@ -14,4 +14,4 @@ Once u save the firmware and keymap render will automatically be built for you.
 
 
 # Default keymap
-![keymap](./renders/briquet.svg)
+![keymap](./renders/cygnus.svg)
