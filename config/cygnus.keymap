@@ -336,7 +336,6 @@
 
             label = "BASE_LAYER";
         };
-abcdefghijklmnopqrstuvwxyz
 
         LEFT_LAYER {
             bindings = <
