@@ -8,10 +8,10 @@
 
                 default_layer {
                         bindings = <
-   &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &kp R &kp T    &kp Y &kp U &kp I &kp O &kp P
-   &kp A &kp S &kp D &kp F &kp G    &kp H &kp J &kp K &kp L &kp DEL
+   &kp Q &kp W &kp E &kp R &kp T        &kp Y &kp U &kp I &kp O &kp P
+   &kp A &kp S &kp D &kp F &kp G        &kp H &kp J &kp K &kp L &kp DEL
    &kp LSHFT &kp Z &kp X &kp C &kp V    &kp B &kp N &kp M &kp N3 &kp DEL
-               &kp N1 &kp N2 &kp N3    &kp N3 &kp N2 &kp N1
+               &bt BT_CLR_ALL &kp N2 &kp N3     &kp N3 &kp N2 &kp N1
                         >;
                 };
         };
