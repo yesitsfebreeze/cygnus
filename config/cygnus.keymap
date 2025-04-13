@@ -268,6 +268,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        bsp_del: bsp_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSP_DEL";
+            bindings = <&kp BACKSPACE>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -316,10 +325,10 @@
 
         BASE {
             bindings = <
-&kp Q       &kp W  &kp E    &kp R          &kp T          &kp Y        &kp U    &kp I    &kp O      &kp P
-&kp A       &kp S  &kp D    &kp F          &kp G          &kp ENTER &kp H        &kp J    &kp K    &kp L      
-&kp LSHIFT  &kp Z  &kp X    &kp C          &kp V          &kp B        &kp N    &kp M    &com_excl  &dot_ques
-                   &kp ESC  &kp BACKSPACE  &lt 1 SPACE    &lt 2 SPACE  &kp DEL  &kp TAB
+&kp Q       &kp W  &kp E    &kp R      &kp T          &kp Y        &kp U     &kp I    &kp O      &kp P
+&kp A       &kp S  &kp D    &kp F      &kp G          &kp ENTER    &kp H     &kp J    &kp K      &kp L
+&kp LSHIFT  &kp Z  &kp X    &kp C      &kp V          &kp B        &kp N     &kp M    &com_excl  &dot_ques
+                   &kp ESC  &kp LCTRL  &lt 1 SPACE    &lt 2 SPACE  &bsp_del  &kp TAB
             >;
 
             label = "BASE";
@@ -338,10 +347,10 @@
 
         RAISE {
             bindings = <
-&none       &kp N1        &kp N2  &kp N3  &none    &none     &none          &none      &none      &none
-&kp N0      &kp N4  &kp N5        &kp N6  &none    &none &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT
-&kp LSHIFT  &kp N7        &kp N8        &nine_tilde   &none    &none &kp HOME  &kp PAGE_DOWN  &kp PG_DN  &kp END    
-                          &none         &none         &mo 3    &none     &none          &none
+&none       &kp N1  &kp N2  &kp N3       &none    &none  &none     &none          &none      &none
+&kp N0      &kp N4  &kp N5  &kp N6       &none    &none  &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT
+&kp LSHIFT  &kp N7  &kp N8  &nine_tilde  &none    &none  &kp HOME  &kp PAGE_DOWN  &kp PG_DN  &kp END
+                    &none   &none        &mo 3    &none  &none     &none
             >;
 
             label = "RAISE";
