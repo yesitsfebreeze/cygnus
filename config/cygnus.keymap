@@ -327,9 +327,9 @@
 
         LOWER {
             bindings = <
-&kp LS(GRAVE)  &kp EXCL       &kp AT_SIGN   &kp HASH   &none    &none  &none  &none  &none  &none
-&none          &kp DOLLAR     &kp PERCENT   &kp CARET  &none    &none  &none  &none  &none  &none
-&none          &kp AMPERSAND  &kp ASTERISK  &kp TILDE  &none    &none  &none  &none  &none  &none
+&kp LS(GRAVE)  &kp EXCL       &kp AT_SIGN   &kp HASH   &none    &none  &none  &none  &none      &none
+&none          &kp DOLLAR     &kp PERCENT   &kp CARET  &none    &none  &none  &none  &semi_col  &quot
+&none          &kp AMPERSAND  &kp ASTERISK  &kp TILDE  &none    &none  &none  &none  &none      &none
                               &none         &none      &none    &mo 3  &none  &none
             >;
 
