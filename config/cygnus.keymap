@@ -330,8 +330,8 @@
             bindings = <
 &kp ESC &kp Q &kp W &kp R &kp P    &kp B &kp E &kp I &kp O &kp Y
 &kp T   &kp A &kp S &kp D &kp F    &kp G &kp H &kp J &kp K &kp L
-&kp Z   &kp X &kp C &kp V &none    &none &kp N &kp M &kp U &none
-            &kp ESC  &kp LCTRL  &lt 1 SPACE    &lt 2 SPACE  &bsp_del  &kp TAB
+&kp LSHIFT &kp Z   &kp X &kp C &kp V     &none &kp N &kp M &kp U &none
+            &kp LALT  &kp LCTRL  &lt 1 SPACE    &lt 2 SPACE  &bsp_del  &kp TAB
             >;
 
             label = "BASE_LAYER";
