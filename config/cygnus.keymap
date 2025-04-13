@@ -1,8 +1,7 @@
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define LOWER 1
@@ -318,10 +317,10 @@
 
         BASE {
             bindings = <
-&kp Q             &kp W           &kp E           &kp R        &kp T        &ht LC(Y) Y  &kp U        &kp I           &kp O            &kp P
-&kp A  &ht LEFT_ALT S  &ht LEFT_GUI D  &ht LCTRL F  &kp G        &hold_ent_bsp LEFT_SHIFT 0 &kp H        &ht RCTRL J  &ht LEFT_GUI K  &ht RIGHT_ALT L  
-&kp LSHIFT &ht LC(Z) Z       &ht LC(X) X     &ht LC(C) C     &ht LC(V) V       &kp B        &kp N           &kp M            &lt 2 SPACE &unds_del
-                                  &kp ESC      &kp TAB  &lt 1 SPACE  &lt 2 SPACE  &kp  BACKSPACE       &kp DEL
+&kp Q       &kp W           &kp E           &kp R        &kp T          &ht LC(Y) Y  &kp U          &kp I        &kp O           &kp P
+&kp A       &ht LEFT_ALT S  &ht LEFT_GUI D  &ht LCTRL F  &kp G          &kp ENTER    &kp H          &ht RCTRL J  &ht LEFT_GUI K  &ht RIGHT_ALT L
+&kp LSHIFT  &ht LC(Z) Z     &ht LC(X) X     &ht LC(C) C  &ht LC(V) V    &kp B        &kp N          &kp M        &lt 2 SPACE     &unds_del
+                            &kp ESC         &kp TAB      &lt 2 SPACE    &lt 1 SPACE  &kp BACKSPACE  &kp DEL
             >;
 
             label = "BASE";
@@ -329,10 +328,10 @@
 
         LOWER {
             bindings = <
-&gresc          &kp HOME   &kp UP     &kp END    &lbrkt  &rbrkt       &and      &or                   &ma_pointer         &kp EQUAL
-&ht LSHIFT TAB  &kp LEFT   &kp DOWN   &kp RIGHT  &lprn   &rpen        &kp LALT  &hold_semicol LGUI 0  &hold_quot LCTRL 0  &hold_bsp_ent LEFT_SHIFT 0
-&kp LC(Z)       &kp LC(X)  &kp LC(C)  &kp LC(V)  &none   &lt 3 SPACE  &slash    &com_excl             &dot_ques       
-                                  &ht LC(C) C     &ht LC(V) V  &lt 1 SPACE  &lt 2 SPACE  &kp B        &kp N               &kp MINUS
+&gresc          &kp HOME   &kp UP       &kp END      &lbrkt         &rbrkt       &and            &or             &ma_pointer  &kp EQUAL
+&ht LSHIFT TAB  &kp LEFT   &kp DOWN     &kp RIGHT    &lprn          &rpen        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP       &kp RIGHT
+&kp LC(Z)       &kp LC(X)  &kp LC(C)    &kp LC(V)    &none          &lt 3 SPACE  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP  &kp END
+                           &ht LC(V) V  &lt 1 SPACE  &lt 2 SPACE    &kp B        &kp N           &kp MINUS
             >;
 
             label = "LOWER";
@@ -340,10 +339,10 @@
 
         RAISE {
             bindings = <
-&gresc          &kp EXCL    &kp AT       &kp HASH   &kp KP_SUBTRACT  &kp KP_PLUS      &kp N1                    &kp N2       &kp N3                   &eql_only
-&ht LSHIFT TAB  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp KP_DIVIDE    &kp KP_MULTIPLY  &hold_four_dollar LALT 0  &ht RGUI N5  &hold_six_caret RCTRL 0  &hold_bsp_ent LEFT_SHIFT 0
-&none           &kp AMPS    &kp ASTRK    &kp TILDE  &lt 3 SPACE      &none            &kp N7                    &kp N8       &nine_tilde              &zero_del
-                                  &ht LC(C) C     &ht LC(V) V  &lt 1 SPACE  &lt 2 SPACE  &kp B        &kp N           
+&gresc          &kp EXCL    &kp AT       &kp HASH     &kp KP_SUBTRACT    &kp KP_PLUS      &kp N1                    &kp N2       &kp N3                   &eql_only
+&ht LSHIFT TAB  &kp DOLLAR  &kp PERCENT  &kp CARET    &kp KP_DIVIDE      &kp KP_MULTIPLY  &hold_four_dollar LALT 0  &ht RGUI N5  &hold_six_caret RCTRL 0  &hold_bsp_ent LEFT_SHIFT 0
+&none           &kp AMPS    &kp ASTRK    &kp TILDE    &lt 3 SPACE        &none            &kp N7                    &kp N8       &nine_tilde              &zero_del
+                            &ht LC(C) C  &ht LC(V) V  &lt 1 SPACE        &lt 2 SPACE      &kp B                     &kp N
             >;
 
             label = "RAISE";
@@ -351,10 +350,10 @@
 
         COMBO {
             bindings = <
-&gresc          &mkp LCLK       &mmv MOVE_UP    &mkp RCLK         &none  &none  &kp F1  &kp F2  &kp F3  &none
-&ht LSHIFT TAB  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &none  &none  &kp F4  &kp F5  &kp F6  &ht LSHIFT ENTER
-&bootloader     &none  &mkp MCLK       &none  &none  &none  &kp F7  &kp F8  &kp F9  &none
-                                  &ht LC(C) C     &ht LC(V) V  &lt 1 SPACE  &lt 2 SPACE  &kp B        &kp N           
+&gresc          &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none          &none        &kp F1  &kp F2  &kp F3  &none
+&ht LSHIFT TAB  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none          &none        &kp F4  &kp F5  &kp F6  &ht LSHIFT ENTER
+&bootloader     &none           &mkp MCLK       &none            &none          &none        &kp F7  &kp F8  &kp F9  &none
+                                &ht LC(C) C     &ht LC(V) V      &lt 1 SPACE    &lt 2 SPACE  &kp B   &kp N
             >;
 
             label = "COMBO";
