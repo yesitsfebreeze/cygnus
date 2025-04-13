@@ -329,7 +329,7 @@
         BASE_LAYER {
             bindings = <
 &kp ESC     &kp Q  &kp W     &kp R      &kp P          &kp B        &kp E     &kp I    &kp O  &kp Y
-&kp F       &kp A  &kp S     &kp D      &kp T          &kp G        &kp H     &kp J    &kp K  &kp L
+&kp F       &kp A  &kp S     &kp T      &kp D          &kp G        &kp H     &kp J    &kp K  &kp L
 &kp LSHIFT  &kp Z  &kp X     &kp C      &kp V          &none        &kp N     &kp M    &kp U  &kp ENTER
                    &kp LALT  &kp LCTRL  &lt 1 SPACE    &lt 2 SPACE  &bsp_del  &kp TAB
             >;
