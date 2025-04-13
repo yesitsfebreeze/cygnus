@@ -1,0 +1,373 @@
+#define BASE 0
+#define LOWER 1
+#define RAISE 2
+#define COMBO 3
+
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+
+/ {
+    behaviors {
+        ht: ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold&Tap";
+            bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <180>;
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "tap-preferred";
+        };
+
+        lprn: lprn {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LPRN";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        rpen: rpen {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RPEN";
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        entbsp: entbsp {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ENTBSP";
+            bindings = <&kp ENTER>, <&kp BACKSPACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        bspent: bspent {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSPENT";
+            bindings = <&kp BACKSPACE>, <&kp ENTER>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        slash: slash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLASH";
+            bindings = <&kp SLASH>, <&kp NON_US_BACKSLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        lbrkt: lbrkt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LBRKT";
+            bindings = <&kp LEFT_BRACKET>, <&kp LESS_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        rbrkt: rbrkt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RBRKT";
+            bindings = <&kp RIGHT_BRACKET>, <&kp GREATER_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        four_dollar: four_dollar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FOUR_DOLLAR";
+            bindings = <&kp N4>, <&kp DOLLAR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        six_caret: six_caret {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SIX_CARET";
+            bindings = <&kp N6>, <&kp CARET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        nine_tilde: nine_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NINE_TILDE";
+            bindings = <&kp N9>, <&kp TILDE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        semi_col: semi_col {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SEMI_COL";
+            bindings = <&kp SEMICOLON>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        and: and {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AND";
+            bindings = <&kp AMPERSAND>, <&ma_and>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        semicol: semicol {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SEMICOL";
+            bindings = <&kp SEMICOLON>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        hold_semicol: hold_semicol {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold&Semicol";
+            bindings = <&kp>, <&semicol>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+        };
+
+        quot: quot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "quot";
+            bindings = <&kp DOUBLE_QUOTES>, <&kp SQT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        hold_quot: hold_quot {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold&Quot";
+            bindings = <&kp>, <&quot>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+        };
+
+        or: or {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OR";
+            bindings = <&kp PIPE>, <&ma_or>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        dot_ques: dot_ques {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_QUES";
+            bindings = <&kp PERIOD>, <&kp QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        com_excl: com_excl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COM_EXCL";
+            bindings = <&kp COMMA>, <&kp EXCL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        hold_four_dollar: hold_four_dollar {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold&Four";
+            bindings = <&kp>, <&four_dollar>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+        };
+
+        hold_six_caret: hold_six_caret {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold&Six";
+            bindings = <&kp>, <&six_caret>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+        };
+
+        hold_ent_bsp: hold_ent_bsp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold&Enter";
+            bindings = <&kp>, <&entbsp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+        };
+
+        hold_bsp_ent: hold_bsp_ent {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold&BSP";
+            bindings = <&kp>, <&bspent>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            flavor = "tap-preferred";
+        };
+
+        unds_del: unds_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UNDS_DEL";
+            bindings = <&kp UNDERSCORE>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        zero_del: zero_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ZERO_DEL";
+            bindings = <&kp N0>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        eql_only: eql_only {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EQUAL_ONLY";
+            bindings = <&kp EQUAL>, <&none>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        com_dot: com_dot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COM_DOT";
+            bindings = <&kp COMMA>, <&kp PERIOD>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        bsp_del: bsp_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSP_DEL";
+            bindings = <&kp BACKSPACE>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    macros {
+        ma_equal: ma_equal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp EQUAL>, <&macro_press>;
+
+            label = "MA_EQUAL";
+        };
+
+        ma_pointer: ma_pointer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+            label = "MA_POINTER";
+        };
+
+        ma_or: ma_or {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PIPE &kp PIPE>;
+            label = "MA_OR";
+        };
+
+        ma_and: ma_and {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp AMPS &kp AMPS>;
+            label = "MA_AND";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        alt_tab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <24 0>;
+            layers = <1>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        BASE {
+            bindings = <
+&kp Q       &kp W  &kp E    &kp R      &kp T          &kp Y        &kp U     &kp I    &kp O      &kp P
+&kp A       &kp S  &kp D    &kp F      &kp G          &kp ENTER    &kp H     &kp J    &kp K      &kp L
+&kp LSHIFT  &kp Z  &kp X    &kp C      &kp V          &kp B        &kp N     &kp M    &com_excl  &dot_ques
+                   &kp ESC  &kp LCTRL  &lt 1 SPACE    &lt 2 SPACE  &bsp_del  &kp TAB
+            >;
+
+            label = "BASE";
+        };
+
+        LOWER {
+            bindings = <
+&none       &kp N1  &kp N2  &kp N3       &none    &none  &none     &none          &none      &none
+&kp N0      &kp N4  &kp N5  &kp N6       &none    &none  &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT
+&kp LSHIFT  &kp N7  &kp N8  &nine_tilde  &none    &none  &kp HOME  &kp PAGE_DOWN  &kp PG_DN  &kp END
+                              &none         &none      &none     &mo 3   &none  &none
+            >;
+
+            label = "LOWER";
+        };
+
+        RAISE {
+            bindings = < 
+&kp LS(GRAVE)  &kp EXCL       &kp AT_SIGN   &kp HASH   &lbrkt    &rbrkt  &none  &none  &none      &eql_only
+&none          &kp DOLLAR     &kp PERCENT   &kp CARET  &lprn     &rpen   &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT
+&trans         &kp AMPERSAND  &kp ASTERISK  &kp TILDE  &none     &none   &mkp LCLK  &mkp RCLK  &semi_col  &quot 
+                    &none   &none        &mo 3    &none  &none     &none
+            >;
+
+            label = "RAISE";
+        };
+
+        COMBO {
+            bindings = <
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+              &none  &none  &none    &none  &none  &none
+            >;
+
+            label = "COMBO";
+        };
+    };
+};
