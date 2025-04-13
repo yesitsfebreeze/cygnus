@@ -336,13 +336,12 @@
             label = "BASE_LAYER";
         };
 
-
         LEFT_LAYER {
             bindings = <
-&none       &kp N1  &kp N2  &kp N3       &none    &none  &none     &none          &none      &none
-&kp N0      &kp N4  &kp N5  &kp N6       &none    &none  &none     &none          &semi_col     &quot
-&kp LSHIFT  &kp N7  &kp N8  &nine_tilde  &none    &none  &none &none &none      &none
-                    &trans  &trans       &none    &mo 3  &trans    &kp LA(TAB)
+&none       &kp N1  &kp N2  &kp N3       &none    &none  &ma_pointer  &ma_and      &ma_or     &eql_only
+&kp N0      &kp N4  &kp N5  &kp N6       &none    &none  &none        &none        &semi_col  &quot
+&kp LSHIFT  &kp N7  &kp N8  &nine_tilde  &none    &none  &none        &none        &none      &none
+                    &trans  &trans       &none    &mo 3  &trans       &kp LA(TAB)
             >;
 
             label = "LEFT_LAYER";
@@ -350,10 +349,10 @@
 
         RIGHT_LAYER {
             bindings = <
-&kp LS(GRAVE)  &kp EXCL       &kp AT_SIGN   &kp HASH   &lbrkt    &rbrkt  &none           &none           &none         &eql_only
+&kp LS(GRAVE)  &kp EXCL       &kp AT_SIGN   &kp HASH   &lbrkt    &rbrkt  &none     &none          &none      &eql_only
 &none          &kp DOLLAR     &kp PERCENT   &kp CARET  &lprn     &rpen   &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT
 &trans         &kp AMPERSAND  &kp ASTERISK  &kp TILDE  &none     &none   &kp HOME  &kp PAGE_DOWN  &kp PG_DN  &kp END
-                              &trans        &trans     &mo 3     &none   &trans          &kp LA(TAB)
+                              &trans        &trans     &mo 3     &none   &trans    &kp LA(TAB)
             >;
 
             label = "RIGHT_LAYER";
