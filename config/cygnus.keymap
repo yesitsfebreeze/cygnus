@@ -340,8 +340,8 @@
         LEFT_LAYER {
             bindings = <
 &none       &kp N1  &kp N2  &kp N3       &none    &none  &none     &none          &none      &none
-&kp N0      &kp N4  &kp N5  &kp N6       &none    &none  &none     &none          &none      &none
-&kp LSHIFT  &kp N7  &kp N8  &nine_tilde  &none    &none  &none &none &semi_col     &quot
+&kp N0      &kp N4  &kp N5  &kp N6       &none    &none  &none     &none          &semi_col     &quot
+&kp LSHIFT  &kp N7  &kp N8  &nine_tilde  &none    &none  &none &none &none      &none
                     &trans  &trans       &none    &mo 3  &trans    &kp LA(TAB)
             >;
 
