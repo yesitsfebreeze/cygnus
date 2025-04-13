@@ -1,16 +1,20 @@
+
+
 if SHIELD_CYGNUS_LEFT
 
+config ZMK_BATTERY_REPORTING
+	default n
+
 config ZMK_KEYBOARD_NAME
-    default "cygnus keyboard"
+	default "cygnus"
 
 config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+	default y
 
 endif
 
 if SHIELD_CYGNUS_LEFT || SHIELD_CYGNUS_RIGHT
 
 config ZMK_SPLIT
-    default y
-
+	default y
 endif
