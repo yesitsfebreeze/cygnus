@@ -326,11 +326,13 @@
     keymap {
         compatible = "zmk,keymap";
 
+
+
         BASE_LAYER {
             bindings = <
-&kp Q       &kp W  &kp E    &kp R      &kp T          &kp Y        &kp U     &kp I    &kp O      &kp P
-&kp A       &kp S  &kp D    &kp F      &kp G          &kp ENTER    &kp H     &kp J    &kp K      &kp L
-&kp LSHIFT  &kp Z  &kp X    &kp C      &kp V          &kp B        &kp N     &kp M    &com_excl  &dot_ques
+&kp Q &kp W &kp F &kp P &kp B    &none &kp N &kp I &kp U &kp Y        
+&kp A &kp R &kp S &kp T &kp G    &none &kp H &kp J &kp K &kp L
+&kp Z &kp X &kp C &kp D &kp V    &none &kp E &kp M &kp O &none
                    &kp ESC  &kp LCTRL  &lt 1 SPACE    &lt 2 SPACE  &bsp_del  &kp TAB
             >;
 
