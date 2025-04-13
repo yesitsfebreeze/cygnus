@@ -316,9 +316,9 @@
 
         BASE {
             bindings = <
-&kp Q       &kp W  &kp E    &kp R          &kp T          &kp Y        &kp U    &kp I    &kp O  &kp P
-&kp A       &kp S  &kp D    &kp F          &kp G          &kp ENTER    &kp H    &kp J    &kp K  &kp L
-&kp LSHIFT  &kp Z  &kp X    &kp C          &kp V          &kp B        &kp N    &kp M    &none  &none
+&kp Q       &kp W  &kp E    &kp R          &kp T          &kp Y        &kp U    &kp I    &kp O      &kp P
+&kp A       &kp S  &kp D    &kp F          &kp G          &kp ENTER    &kp H    &kp J    &kp K      &kp L
+&kp LSHIFT  &kp Z  &kp X    &kp C          &kp V          &kp B        &kp N    &kp M    &com_excl  &dot_ques
                    &kp ESC  &kp BACKSPACE  &lt 1 SPACE    &lt 2 SPACE  &kp DEL  &kp TAB
             >;
 
@@ -327,7 +327,7 @@
 
         LOWER {
             bindings = <
-&kp LS(GRAVE)  &kp EXCL       &kp AT_SIGN   &kp HASH   &none    &none  &none  &none  &none      &none
+&kp LS(GRAVE)  &kp EXCL       &kp AT_SIGN   &kp HASH   &none    &none  &none  &none  &none      &eql_only
 &none          &kp DOLLAR     &kp PERCENT   &kp CARET  &none    &none  &none  &none  &semi_col  &quot
 &trans         &kp AMPERSAND  &kp ASTERISK  &kp TILDE  &none    &none  &none  &none  &none      &none
                               &none         &none      &none    &mo 3  &none  &none
