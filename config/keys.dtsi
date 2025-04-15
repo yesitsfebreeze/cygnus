@@ -1,0 +1,3 @@
+#define ESC &kp ESC
+#define TAB &kp TAB
+#define CAPS_LOCK &kp CAPS_LOCK
