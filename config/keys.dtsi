@@ -1,3 +1,0 @@
-#define K_ESC &kp ESC
-#define K_TAB &kp TAB
-#define K_CAPS &kp CAPS_LOCK
