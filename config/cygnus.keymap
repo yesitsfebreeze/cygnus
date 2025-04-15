@@ -6,10 +6,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-// #define SPC1 &lt 1 SPACE
-// #define SPC2 &lt 2 SPACE
-// #define SPC3 &lt 3 SPACE
-
 / {
     behaviors {
         ht: ht {
