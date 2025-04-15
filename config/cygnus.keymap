@@ -174,7 +174,7 @@
 
         BASE_LAYER {
             bindings = <
-&kp Q  &kp W  &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp _COL
+&kp Q  &kp W  &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &_COL
 &kp A  &kp R  &kp S &kp T &kp G &kp M &kp N &kp E &kp I &kp O
 &kp Z  &kp X  &kp C &kp D &kp C &kp K &kp H &_DOT_QUES  &_COM_EXCL &_SLASH
                    &ht LALT LGUI  &kp LCTRL  &lt 1 SPACE    &lt 2 SPACE  &_BSP_DEL  &_COM_DOT
