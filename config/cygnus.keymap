@@ -173,8 +173,8 @@
         compatible = "zmk,keymap";
 
         BASE_LAYER {
-            bindings = <
-&kp Q  &kp W  &kp F          &kp P        &kp B          &kp J        &kp L          &kp U       &kp Y       &_COL
+            bindings = </ 
+&kp Q  &kp W  &kp F          &kp P        &kp B          &kp J        &kp U          &kp L       &kp Y       &_COL
 &kp A  &kp R  &kp S          &ht LCTRL T  &ht LWIN G     &ht LWIN M   &ht LCTRL N    &kp E       &kp I       &kp O
 &kp Z  &kp X  &kp C          &kp D        &kp V          &kp K        &kp H          &_DOT_QUES  &_COM_EXCL  &_SLASH
               &ht LALT LGUI  &kp LCTRL    &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &_COM_DOT
