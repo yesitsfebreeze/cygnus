@@ -25,108 +25,108 @@
             flavor = "tap-preferred";
         };
 
-        LPRN: LPRN {
+        _LPRN: _LPRN {
             compatible = "zmk,behavior-mod-morph";
-            label = "LPRN";
+            label = "_LPRN";
             bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        RPEN: RPEN {
+        _RPRN: _RPRN {
             compatible = "zmk,behavior-mod-morph";
-            label = "RPEN";
+            label = "_RPRN";
             bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        SLASH: SLASH {
+        _SLASH: _SLASH {
             compatible = "zmk,behavior-mod-morph";
-            label = "SLASH";
+            label = "_SLASH";
             bindings = <&kp SLASH>, <&kp NON_US_BACKSLASH>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        LBRKT: LBRKT {
+        _LBRKT: _LBRKT {
             compatible = "zmk,behavior-mod-morph";
-            label = "LBRKT";
+            label = "_LBRKT";
             bindings = <&kp LEFT_BRACKET>, <&kp LESS_THAN>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        RBRKT: RBRKT {
+        _RBRKT: _RBRKT {
             compatible = "zmk,behavior-mod-morph";
-            label = "RBRKT";
+            label = "_RBRKT";
             bindings = <&kp RIGHT_BRACKET>, <&kp GREATER_THAN>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        COL: COL {
+        _COL: _COL {
             compatible = "zmk,behavior-mod-morph";
-            label = "COL";
+            label = "_COL";
             bindings = <&kp SEMICOLON>, <&kp COLON>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        QUOT: QUOT {
+        _QUOT: _QUOT {
             compatible = "zmk,behavior-mod-morph";
-            label = "QUOT";
+            label = "_QUOT";
             bindings = <&kp DOUBLE_QUOTES>, <&kp SQT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        DOT_QUES: DOT_QUES {
+        _DOT_QUES: _DOT_QUES {
             compatible = "zmk,behavior-mod-morph";
-            label = "DOT_QUES";
+            label = "_DOT_QUES";
             bindings = <&kp PERIOD>, <&kp QUESTION>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        COM_EXCL: COM_EXCL {
+        _COM_EXCL: _COM_EXCL {
             compatible = "zmk,behavior-mod-morph";
-            label = "COM_EXCL";
+            label = "_COM_EXCL";
             bindings = <&kp COMMA>, <&kp EXCL>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        eql_only: eql_only {
+        _EQUAL_ONLY: _EQUAL_ONLY {
             compatible = "zmk,behavior-mod-morph";
-            label = "EQUAL_ONLY";
+            label = "_EQUAL_ONLY";
             bindings = <&kp EQUAL>, <&none>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        COM_DOT: COM_DOT {
+        _COM_DOT: _COM_DOT {
             compatible = "zmk,behavior-mod-morph";
-            label = "COM_DOT";
+            label = "_COM_DOT";
             bindings = <&kp COMMA>, <&kp PERIOD>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        BSP_DEL: BSP_DEL {
+        _BSP_DEL: _BSP_DEL {
             compatible = "zmk,behavior-mod-morph";
-            label = "BSP_DEL";
+            label = "_BSP_DEL";
             bindings = <&kp BACKSPACE>, <&kp DEL>;
 
             #binding-cells = <0>;
@@ -183,7 +183,7 @@
 &kp ESC     &kp Q  &kp W     &kp E      &kp R        &kp Y        &kp U     &kp I    &kp O  &kp P
 &kp TAB     &kp A  &kp S     &kp D      &kp T        &kp F        &kp H     &kp J    &kp K  &kp L
 &kp LSHIFT  &kp Z  &kp X     &kp C      &kp V        &kp G        &kp N     &kp M    &kp B  &kp ENTER
-                   &ht LALT LGUI &kp LCTRL  &lt 1 SPACE    &lt 2  SPACE  &BSP_DEL  &COM_DOT
+                   &ht LALT LGUI &kp LCTRL  &lt 1 SPACE    &lt 2  SPACE  &_BSP_DEL  &_COM_DOT
             >;
 
             label = "BASE_LAYER";
@@ -191,10 +191,10 @@
 
         LEFT_LAYER {
             bindings = <
-&none       &kp N1  &kp N2  &kp N3       &none    &none        &ma_pointer  &ma_and      &ma_or     &eql_only
-&kp N0      &kp N4  &kp N5  &kp N6       &none    &none        &none        &none        &semi_col  &quot
-&kp LSHIFT  &kp N7  &kp N8  &nine_tilde  &none    &none        &none        &none        &none      &none
-                    &trans  &trans       &none    &lt 3 SPACE  &trans       &kp LA(TAB)
+&none &none &none &none &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none &none &none
+            &none &none &none &none &none &none
             >;
 
             label = "LEFT_LAYER";
@@ -202,10 +202,10 @@
 
         RIGHT_LAYER {
             bindings = <
-&kp LS(GRAVE)  &kp EXCL       &kp AT_SIGN   &kp HASH   &lbrkt         &rbrkt  &none     &none          &none      &eql_only
-&none          &kp DOLLAR     &kp PERCENT   &kp CARET  &lprn          &rpen   &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT
-&trans         &kp AMPERSAND  &kp ASTERISK  &kp TILDE  &none          &none   &kp HOME  &kp PAGE_DOWN  &kp PG_DN  &kp END
-                              &trans        &trans     &lt 3 SPACE    &none   &trans    &kp LA(TAB)
+&none &none &none &none &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none &none &none
+            &none &none &none &none &none &none
             >;
 
             label = "RIGHT_LAYER";
@@ -213,10 +213,10 @@
 
         COMBO_LAYER {
             bindings = <
-&kp X  &none  &none  &none  &bt BT_CLR_ALL    &none           &none           &none         &none            &none
-&none  &none  &none  &none  &bt BT_SEL 0      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
-&none  &none  &none  &none  &none             &none           &none           &none         &none            &none
-              &none  &none  &none             &none           &none
+&none &none &none &none &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none &none &none
+            &none &none &none &none &none &none
             >;
 
             label = "COMBO_LAYER";
