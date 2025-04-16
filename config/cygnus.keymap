@@ -148,9 +148,9 @@
             mods = <(SFT)>;
         };
 
-        _MNS_PLS: _N9_TLD {
+        _MNS_PLS: _MNS_PLS {
             compatible = "zmk,behavior-mod-morph";
-            label = "_N9_TLD";
+            label = "_MNS_PLS";
             bindings = <&kp MINUS>, <&kp PLUS>;
 
             #binding-cells = <0>;
