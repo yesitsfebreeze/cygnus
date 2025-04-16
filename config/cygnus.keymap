@@ -130,7 +130,7 @@
         _N9_TLD: _N9_TLD {
             compatible = "zmk,behavior-mod-morph";
             label = "_N9_TLD";
-            bindings = <&kp 9>, <&kp TILDE>;
+            bindings = <&kp N9>, <&kp TILDE>;
             
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
