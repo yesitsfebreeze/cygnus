@@ -6,7 +6,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-
 #define SFT MOD_LSFT|MOD_RSFT
 
 / {
@@ -215,10 +214,10 @@
 
         LEFT_LAYER {
             bindings = <
-&kp K_PLAY_PAUSE  &kp EXCL    &kp AT       &kp HASH   &_LBRKT    &_RBRKT      &none  &none         &MA_EQL  &_EQL
-&kp LSHIFT        &kp DOLLAR  &kp PERCENT  &kp CARET  &_LPRN     &_LPRN       &_SLASH  &_MNS_PLS  &_UNDS  &kp LSHFT
-&MA_AND            &kp AMPS    &kp ASTRK    &kp TILDE  &kp PIPE      &MA_OR        &none  &none         &none  &none
-                              &none        &none      &none      &lt 3 SPACE  &none  &none
+&kp K_PLAY_PAUSE  &kp EXCL    &kp AT       &kp HASH   &_LBRKT     &_RBRKT      &none    &none      &MA_EQL  &_EQL
+&kp LSHIFT        &kp DOLLAR  &kp PERCENT  &kp CARET  &_LPRN      &_RPRN       &_SLASH  &_MNS_PLS  &_UNDS   &kp LSHFT
+&MA_AND           &kp AMPS    &kp ASTRK    &kp TILDE  &kp PIPE    &MA_OR       &none    &none      &none    &none
+                              &none        &none      &none       &lt 3 SPACE  &none    &none
             >;
 
             label = "LEFT_LAYER";
