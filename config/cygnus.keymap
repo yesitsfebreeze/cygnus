@@ -25,7 +25,7 @@
             bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         _RPRN: _RPRN {
@@ -34,7 +34,7 @@
             bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         _SLASH: _SLASH {
@@ -43,7 +43,7 @@
             bindings = <&kp SLASH>, <&kp NON_US_BACKSLASH>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         _LBRKT: _LBRKT {
@@ -52,7 +52,7 @@
             bindings = <&kp LEFT_BRACKET>, <&kp LESS_THAN>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         _RBRKT: _RBRKT {
@@ -61,7 +61,7 @@
             bindings = <&kp RIGHT_BRACKET>, <&kp GREATER_THAN>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         _COL: _COL {
@@ -70,7 +70,7 @@
             bindings = <&kp COLON>, <&kp SEMICOLON>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         _QUOT: _QUOT {
@@ -79,7 +79,7 @@
             bindings = <&kp DOUBLE_QUOTES>, <&kp SQT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         _DOT_QUES: _DOT_QUES {
@@ -88,7 +88,7 @@
             bindings = <&kp PERIOD>, <&kp QUESTION>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         _COM_EXCL: _COM_EXCL {
@@ -97,7 +97,7 @@
             bindings = <&kp COMMA>, <&kp EXCL>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         _EQUAL_ONLY: _EQUAL_ONLY {
@@ -106,7 +106,7 @@
             bindings = <&kp EQUAL>, <&none>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         _COM_DOT: _COM_DOT {
@@ -115,13 +115,22 @@
             bindings = <&kp COMMA>, <&kp PERIOD>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         _BSP_DEL: _BSP_DEL {
             compatible = "zmk,behavior-mod-morph";
             label = "_BSP_DEL";
             bindings = <&kp BACKSPACE>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        _N9_TLD: _BSP_DEL {
+            compatible = "zmk,behavior-mod-morph";
+            label = "_BSP_DEL";
+            bindings = <&kp N9>, <&kp TILDEL>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -196,9 +205,9 @@
 
         RIGHT_LAYER {
             bindings = <
-&none  &kp N1  &kp N1  &kp N1  &none          &none  &none     &none      &none      &none
-&none  &kp N1   &kp N1  &kp N1  &none          &none  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
-&none  &kp N1   &kp N1  &kp N1  &none          &none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
+&none  &kp N1  &kp N2  &kp N3  &none          &none  &none     &none      &none      &none
+&kp N0  &kp N4   &kp N5  &kp N6  &none          &none  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
+&none  &kp N7   &kp N8  &_N9_TLD  &none          &none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
                &none  &none  &lt 3 SPACE    &none  &none     &none
             >;
 
