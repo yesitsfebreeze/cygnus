@@ -211,7 +211,7 @@
             bindings = <
 &none  &kp N1  &kp N2 &kp N3  &none          &none  &none     &none      &none      &none
 &none  &kp N4  &kp N5 &kp N6  &none          &none  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
-&none  &kp N7  &kp N8 &_N9_TLD  &none          &none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
+&none  &kp N7  &kp N8 &none  &none          &none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
                &none  &none  &lt 3 SPACE    &none  &none     &none
             >;
 
