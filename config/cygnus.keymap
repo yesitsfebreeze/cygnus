@@ -12,7 +12,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HT";
             bindings = <&kp>, <&kp>;
-
             quick-tap-ms = <180>;
             #binding-cells = <2>;
             tapping-term-ms = <180>;
@@ -23,7 +22,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "_LPRN";
             bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACE>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -32,7 +30,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "_RPRN";
             bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACE>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -41,7 +38,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "_SLASH";
             bindings = <&kp SLASH>, <&kp NON_US_BACKSLASH>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -50,7 +46,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "_LBRKT";
             bindings = <&kp LEFT_BRACKET>, <&kp LESS_THAN>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -59,7 +54,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "_RBRKT";
             bindings = <&kp RIGHT_BRACKET>, <&kp GREATER_THAN>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -68,7 +62,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "_COL";
             bindings = <&kp COLON>, <&kp SEMICOLON>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -77,7 +70,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "_QUOT";
             bindings = <&kp DOUBLE_QUOTES>, <&kp SQT>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -86,7 +78,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "_DOT_QUES";
             bindings = <&kp PERIOD>, <&kp QUESTION>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -95,7 +86,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "_COM_EXCL";
             bindings = <&kp COMMA>, <&kp EXCL>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -104,7 +94,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "_EQUAL_ONLY";
             bindings = <&kp EQUAL>, <&none>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -113,7 +102,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "_COM_DOT";
             bindings = <&kp COMMA>, <&kp PERIOD>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -122,7 +110,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "_BSP_DEL";
             bindings = <&kp BACKSPACE>, <&kp DEL>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -131,7 +118,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "_N9_TLD";
             bindings = <&kp N9>, <&kp TILDE>;
-
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
