@@ -194,10 +194,10 @@
 
         LEFT_LAYER {
             bindings = <
-&gresc      &kp EXCL    &kp AT       &kp HASH   &_LBRKT    &_RBRKT      &none  &none  &none  &none
-&kp LSHIFT  &kp DOLLAR  &kp PERCENT  &kp CARET  &_LPRN     &_LPRN       &none  &none  &none  &kp LSHFT
-&none       &kp AMPS    &kp ASTRK    &kp TILDE  &none      &none        &none  &none  &none  &none
-                        &none        &none      &none      &lt 3 SPACE  &none  &none
+&kp K_PLAY_PAUSE  &kp EXCL    &kp AT       &kp HASH   &_LBRKT    &_RBRKT      &none  &none         &none  &none
+&kp LSHIFT        &kp DOLLAR  &kp PERCENT  &kp CARET  &_LPRN     &_LPRN       &none  &_EQUAL_ONLY  &none  &kp LSHFT
+&none             &kp AMPS    &kp ASTRK    &kp TILDE  &none      &none        &none  &none         &none  &none
+                              &none        &none      &none      &lt 3 SPACE  &none  &none
             >;
 
             label = "LEFT_LAYER";
@@ -206,8 +206,8 @@
         RIGHT_LAYER {
             bindings = <
 &none   &kp N1  &kp N2  &kp N3    &none          &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO
-&kp N0  &kp N4  &kp N5  &kp N6    &none          &none       &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT
-&none   &kp N7  &kp N8  &_N9_TLD  &none          &none       &kp HOME     &kp PG_DN   &kp PG_UP  &kp END
+&kp N0  &kp N4  &kp N5  &kp N6    &none          &caps_word  &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT
+&none   &kp N7  &kp N8  &_N9_TLD  &none          &kp INS     &kp HOME     &kp PG_DN   &kp PG_UP  &kp END
                 &none   &none     &lt 3 SPACE    &none       &none        &none
             >;
 
