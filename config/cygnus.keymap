@@ -67,7 +67,7 @@
         _COL: _COL {
             compatible = "zmk,behavior-mod-morph";
             label = "_COL";
-            bindings = <&kp SEMICOLON>, <&kp COLON>;
+            bindings = <&kp COLON>, <&kp SEMICOLON>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -186,8 +186,8 @@
         LEFT_LAYER {
             bindings = <
 &gresc      &kp HOME       &kp UP    &kp END      &none    &none        &none     &none      &none      &none
-&kp LSHIFT  &kp LEFT       &kp DOWN  &kp RIGHT    &none    &none        &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
-&none       &kp PAGE_DOWN  &none     &kp PAGE_UP  &none    &none        &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
+&kp LSHIFT  &kp LEFT       &kp DOWN  &kp RIGHT    &none    &none        &none     &none      &none      &none
+&none       &kp PAGE_DOWN  &none     &kp PAGE_UP  &none    &none        &none     &none      &none      &none
                            &none     &none        &none    &lt 3 SPACE  &none     &none
             >;
 
@@ -197,9 +197,9 @@
         RIGHT_LAYER {
             bindings = <
 &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-              &none  &none  &none    &none  &none  &none
+&none  &none  &none  &none  &none    &none  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
+&none  &none  &none  &none  &none    &none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
+              &none  &none  &lt 3 SPACE    &none  &none  &none
             >;
 
             label = "RIGHT_LAYER";
