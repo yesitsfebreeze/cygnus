@@ -159,29 +159,29 @@
     };
 
     macros {
-        ma_equal: ma_equal {
+        MA_EQL: MA_EQL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp EQUAL>, <&macro_press>;
 
-            label = "MA_EQUAL";
+            label = "MA_EQL";
         };
 
-        ma_pointer: ma_pointer {
+        MA_POINTER: MA_POINTER {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp MINUS &kp GT>;
             label = "MA_POINTER";
         };
 
-        ma_or: ma_or {
+        MA_OR: MA_OR {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp PIPE &kp PIPE>;
             label = "MA_OR";
         };
 
-        ma_and: ma_and {
+        MA_AND: MA_AND {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp AMPS &kp AMPS>;
@@ -215,9 +215,9 @@
 
         LEFT_LAYER {
             bindings = <
-&kp K_PLAY_PAUSE  &kp EXCL    &kp AT       &kp HASH   &_LBRKT    &_RBRKT      &none  &none         &none  &_EQL
+&kp K_PLAY_PAUSE  &kp EXCL    &kp AT       &kp HASH   &_LBRKT    &_RBRKT      &none  &none         &MA_EQL  &_EQL
 &kp LSHIFT        &kp DOLLAR  &kp PERCENT  &kp CARET  &_LPRN     &_LPRN       &_SLASH  &_MNS_PLS  &_UNDS  &kp LSHFT
-&none             &kp AMPS    &kp ASTRK    &kp TILDE  &none      &none        &none  &none         &none  &none
+&MA_AND            &kp AMPS    &kp ASTRK    &kp TILDE  &kp PIPE      &MA_OR        &none  &none         &none  &none
                               &none        &none      &none      &lt 3 SPACE  &none  &none
             >;
 
