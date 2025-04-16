@@ -6,6 +6,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+
+#defin SFT MOD_LSFT|MOD_RSFT
+
 / {
     behaviors {
         ht: ht {
@@ -25,7 +28,7 @@
             bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(SFT)>;
         };
 
         _RPRN: _RPRN {
@@ -34,7 +37,7 @@
             bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(SFT)>;
         };
 
         _SLASH: _SLASH {
@@ -43,7 +46,7 @@
             bindings = <&kp SLASH>, <&kp NON_US_BACKSLASH>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(SFT)>;
         };
 
         _LBRKT: _LBRKT {
@@ -52,7 +55,7 @@
             bindings = <&kp LEFT_BRACKET>, <&kp LESS_THAN>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(SFT)>;
         };
 
         _RBRKT: _RBRKT {
@@ -61,7 +64,7 @@
             bindings = <&kp RIGHT_BRACKET>, <&kp GREATER_THAN>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(SFT)>;
         };
 
         _COL: _COL {
@@ -70,7 +73,7 @@
             bindings = <&kp COLON>, <&kp SEMICOLON>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(SFT)>;
         };
 
         _QUOT: _QUOT {
@@ -79,7 +82,7 @@
             bindings = <&kp DOUBLE_QUOTES>, <&kp SQT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(SFT)>;
         };
 
         _DOT_QUES: _DOT_QUES {
@@ -88,7 +91,7 @@
             bindings = <&kp PERIOD>, <&kp QUESTION>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(SFT)>;
         };
 
         _COM_EXCL: _COM_EXCL {
@@ -97,16 +100,25 @@
             bindings = <&kp COMMA>, <&kp EXCL>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(SFT)>;
         };
 
-        _EQUAL_ONLY: _EQUAL_ONLY {
+        _EQL: _EQL {
             compatible = "zmk,behavior-mod-morph";
-            label = "_EQUAL_ONLY";
-            bindings = <&kp EQUAL>, <&none>;
+            label = "_EQL";
+            bindings = <&kp EQUAL>, <&kp EQUAL>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(SFT)>;
+        };
+
+        _UNDS: _UNDS {
+            compatible = "zmk,behavior-mod-morph";
+            label = "_UNDS";
+            bindings = <&kp UNDERSCORE>, <&kp UNDERSCORE>;
+
+            #binding-cells = <0>;
+            mods = <(SFT)>;
         };
 
         _COM_DOT: _COM_DOT {
@@ -115,7 +127,7 @@
             bindings = <&kp COMMA>, <&kp PERIOD>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(SFT)>;
         };
 
         _BSP_DEL: _BSP_DEL {
@@ -124,7 +136,7 @@
             bindings = <&kp BACKSPACE>, <&kp DEL>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(SFT)>;
         };
 
         _N9_TLD: _N9_TLD {
@@ -133,7 +145,16 @@
             bindings = <&kp N9>, <&kp TILDE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(SFT)>;
+        };
+
+        _MNS_PLS: _N9_TLD {
+            compatible = "zmk,behavior-mod-morph";
+            label = "_N9_TLD";
+            bindings = <&kp MINUS>, <&kp PLUS>;
+
+            #binding-cells = <0>;
+            mods = <(SFT)>;
         };
     };
 
@@ -194,8 +215,8 @@
 
         LEFT_LAYER {
             bindings = <
-&kp K_PLAY_PAUSE  &kp EXCL    &kp AT       &kp HASH   &_LBRKT    &_RBRKT      &none  &none         &none  &none
-&kp LSHIFT        &kp DOLLAR  &kp PERCENT  &kp CARET  &_LPRN     &_LPRN       &none  &_EQUAL_ONLY  &none  &kp LSHFT
+&kp K_PLAY_PAUSE  &kp EXCL    &kp AT       &kp HASH   &_LBRKT    &_RBRKT      &none  &none         &none  &_EQL
+&kp LSHIFT        &kp DOLLAR  &kp PERCENT  &kp CARET  &_LPRN     &_LPRN       &_SLASH  &_MNS_PLS  &_UNDS  &kp LSHFT
 &none             &kp AMPS    &kp ASTRK    &kp TILDE  &none      &none        &none  &none         &none  &none
                               &none        &none      &none      &lt 3 SPACE  &none  &none
             >;
