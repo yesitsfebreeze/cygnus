@@ -127,10 +127,10 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        _N9_TLD: _BSP_DEL {
+        _N9_TLD: _N9_TLD {
             compatible = "zmk,behavior-mod-morph";
-            label = "_BSP_DEL";
-            bindings = <&kp N9>, <&kp TILDEL>;
+            label = "_N9_TLD";
+            bindings = <&kp N9>, <&kp TILDE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
