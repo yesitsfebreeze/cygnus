@@ -214,9 +214,9 @@
 
         LEFT_LAYER {
             bindings = <
-&none &kp HOME &kp UP &kp END &none   &none &none &none &none& qnone
-&none &kp LEFT  &kp DOWN &kp RIGHT &none   &none &none &none &none& qnone
-&none &kp PG_DN &none &kp PG_UP &none   &none &none &none &none& qnone
+&none &kp HOME &kp UP &kp END &none   &none &none &none &none &none
+&none &kp LEFT  &kp DOWN &kp RIGHT &none   &none &none &none &none &none
+&none &kp PG_DN &none &kp PG_UP &none   &none &none &none &none &none
             &none &none &none   &none &none
             >;
 
