@@ -203,10 +203,10 @@
 
         BASE_LAYER {
             bindings = <
-&gresc          &kp Y       &kp W    &kp K        &kp M             &kp J        &kp H        &kp U       &kp O           &_SLASH
-&ht LSHFT A     &ht LALT R  &kp S    &ht LCTRL T  &ht LEFT_WIN G    &ht LWIN F   &ht LCTRL N  &kp E       &ht LEFT_ALT I  &ht LSHIFT L
-&kp LEFT_SHIFT  &kp X       &kp C    &kp D        &kp V             &kp Z        &kp P        &kp Q       &kp B           &_QUOT
-                            &kp TAB  &kp DEL      &lt 1 SPACE       &lt 2 ENTER  &_COM_EXCL   &_DOT_QUES
+&gresc          &kp Y       &kp W    &kp K        &kp M             &kp J        &kp H          &kp U       &kp O           &_SLASH
+&ht LSHFT A     &ht LALT R  &kp S    &ht LCTRL T  &ht LEFT_WIN G    &ht LWIN F   &ht LCTRL N    &kp E       &ht LEFT_ALT I  &ht LSHIFT L
+&kp LEFT_SHIFT  &kp X       &kp C    &kp D        &kp V             &kp Z        &kp P          &kp Q       &kp B           &_QUOT
+                            &kp TAB  &_COM_DOT    &lt 1 SPACE       &lt 2 ENTER  &kp BACKSPACE  &_DOT_QUES
             >;
 
             label = "BASE_LAYER";
@@ -214,10 +214,10 @@
 
         LEFT_LAYER {
             bindings = <
-&kp K_PLAY_PAUSE  &kp EXCL    &kp AT       &kp HASH   &_LBRKT     &_RBRKT      &none    &none      &MA_EQL  &_EQL
-&kp LSHIFT        &kp DOLLAR  &kp PERCENT  &kp CARET  &_LPRN      &_RPRN       &_SLASH  &_MNS_PLS  &_UNDS   &kp LSHFT
-&MA_AND           &kp AMPS    &kp ASTRK    &kp TILDE  &kp PIPE    &MA_OR       &none    &none      &none    &none
-                              &none        &none      &none       &lt 3 SPACE  &none    &none
+&kp K_PLAY_PAUSE  &kp EXCL    &kp AT       &kp HASH   &_LBRKT     &_RBRKT      &none       &none      &MA_EQL  &_EQL
+&kp LSHIFT        &kp DOLLAR  &kp PERCENT  &kp CARET  &_LPRN      &_RPRN       &_SLASH     &_MNS_PLS  &_UNDS   &kp LSHFT
+&MA_AND           &kp AMPS    &kp ASTRK    &kp TILDE  &kp PIPE    &MA_OR       &none       &none      &none    &none
+                              &none        &none      &none       &lt 3 SPACE  &kp DELETE  &none
             >;
 
             label = "LEFT_LAYER";
