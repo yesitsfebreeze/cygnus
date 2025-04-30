@@ -204,7 +204,7 @@
         BASE_LAYER {
             bindings = <
 &gresc          &kp Y       &kp W    &kp K        &kp M             &kp J        &kp H          &kp U       &kp O           &_SLASH
-&ht LSHFT A     &ht LALT R  &kp S    &ht LCTRL T  &ht LEFT_WIN G    &ht LWIN F   &ht LCTRL N    &kp E       &ht LEFT_ALT I  &ht LSHIFT L
+&ht LSHFT A     &ht LALT R  &kp S    &ht LCTRL T  &ht LEFT_WIN G    &ht LWIN F   &ht LCTRL N    &kp E       &ht LEFT_ALT L  &ht LSHIFT I
 &kp LEFT_SHIFT  &kp X       &kp C    &kp D        &kp V             &kp Z        &kp P          &kp Q       &kp B           &_QUOT
                             &kp TAB  &_COM_DOT    &lt 1 SPACE       &lt 2 ENTER  &kp BACKSPACE  &_DOT_QUES
             >;
@@ -214,10 +214,10 @@
 
         LEFT_LAYER {
             bindings = <
-&none &kp HOME &kp UP &kp END &none   &none &none &none &none &none
-&none &kp LEFT  &kp DOWN &kp RIGHT &none   &none &none &none &none &none
-&none &kp PG_DN &none &kp PG_UP &none   &none &none &none &none &none
-            &none &none &none   &none &none
+&none  &kp HOME   &kp UP    &kp END    &none    &none  &none  &none  &none  &none
+&none  &kp LEFT   &kp DOWN  &kp RIGHT  &none    &none  &none  &none  &none  &none
+&none  &kp PG_DN  &none     &kp PG_UP  &none    &none  &none  &none  &none  &none
+                  &none     &none      &none    &none  &none
             >;
 
             label = "LEFT_LAYER";
