@@ -203,10 +203,10 @@
 
         BASE_LAYER {
             bindings = <
-&gresc          &kp Q       &kp W    &kp E        &kp R             &kp Y        &kp U          &kp I       &kp O           &_SLASH
-&ht LSHFT T     &ht LALT A  &kp S    &ht LCTRL D  &ht LEFT_WIN F    &ht LWIN G   &ht LCTRL H    &kp J       &ht LEFT_ALT K  &ht RIGHT_SHIFT L
-&kp LEFT_SHIFT  &kp Z       &kp X    &kp C        &kp V             &kp B        &kp N          &kp M       &kp P           &_QUOT
-                            &kp TAB  &_COM_DOT    &lt 1 SPACE       &lt 2 ENTER  &kp BACKSPACE  &_DOT_QUES
+&kp B        &kp Y       &kp O    &kp U        &none          &none        &kp L          &kp D       &kp W  &kp V
+&ht LSHFT C  &ht LALT A  &kp E    &ht LCTRL A  &kp Z          &kp Q        &kp H          &kp T       &kp S  &ht RIGHT_SHIFT N
+&kp G        &kp X       &kp J    &kp K        &none          &none        &kp R          &kp M       &kp F  &kp P
+                         &kp TAB  &_COM_DOT    &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &_DOT_QUES
             >;
 
             label = "BASE_LAYER";
