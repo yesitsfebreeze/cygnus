@@ -204,8 +204,8 @@
         BASE_LAYER {
             bindings = <
 &kp Q  &kp L  &kp W    &kp B      &none          &none        &kp P          &kp U       &kp O  &kp Y
-&kp A  &kp R  &kp S    &kp T      &kp G          &kp M        &kp N          &kp E       &kp I  &kp F
-&kp J  &kp X  &kp C    &kp D      &none          &none        &kp H          &kp K       &kp Z  &kp V
+&kp A  &kp R  &kp S    &kp T      &kp F          &kp M        &kp N          &kp E       &kp I  &kp G
+&kp J  &kp Z  &kp C    &kp D      &none          &none        &kp H          &kp K       &kp X  &kp V
               &kp TAB  &_COM_DOT  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &_DOT_QUES
             >;
 
