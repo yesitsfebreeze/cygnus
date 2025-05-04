@@ -202,13 +202,13 @@
         compatible = "zmk,keymap";
 
 
-// jqvxz
+// jqvz
 
         BASE_LAYER {
             bindings = <
 &none  &kp L  &kp W    &kp P      &none          &none        &kp F          &kp U       &kp O  &none
-&kp A  &kp R  &kp S    &kp T      &kp G          &none        &kp N          &kp E       &kp I  &kp Y
-&none  &kp B  &kp C    &kp D      &none          &none        &kp H          &kp K       &kp M  &none
+&kp A  &kp R  &kp S    &kp T      &kp G          &kp M        &kp N          &kp E       &kp I  &kp Y
+&none  &kp B  &kp C    &kp D      &none          &none        &kp H          &kp K       &kp X  &none
               &kp TAB  &_COM_DOT  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &_DOT_QUES
             >;
 
