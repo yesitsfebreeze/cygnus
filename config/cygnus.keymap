@@ -203,7 +203,7 @@
 
         BASE_LAYER {
             bindings = <
-&gresc  &kp L  &kp W    &kp P      &kp F          &kp Z        &kp M          &kp U       &kp O  &none
+&gresc  &kp M  &kp W    &kp P      &kp F          &kp Z        &kp L          &kp U       &kp O  &none
 &kp A   &kp R  &kp S    &kp T      &kp G          &kp B        &kp N          &kp E       &kp I  &kp Y
 &none   &kp X  &kp C    &kp D      &kp Q          &kp J        &kp H          &kp K       &kp V  &none
                &kp TAB  &_COM_DOT  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &_DOT_QUES
