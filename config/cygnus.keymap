@@ -201,8 +201,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-// update
-
         BASE_LAYER {
             bindings = <
 &none  &kp L  &kp W    &kp P      &kp Q          &kp Z        &kp F          &kp U       &kp O  &none
