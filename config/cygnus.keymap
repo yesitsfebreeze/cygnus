@@ -191,12 +191,6 @@
     combos {
         compatible = "zmk,combos";
 
-        alt_tab {
-            bindings = <&kp LA(TAB)>;
-            key-positions = <24 0>;
-            layers = <1>;
-        };
-
         comQ {
             bindings = <&kp Q>;
             key-positions = <3 2>;
