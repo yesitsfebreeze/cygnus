@@ -205,7 +205,7 @@
 
         comG {
             bindings = <&kp G>;
-            key-positions = <14 13>;
+            key-positions = <13 12>;
             layers = <0>;
         };
     };
