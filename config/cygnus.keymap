@@ -196,6 +196,18 @@
             key-positions = <24 0>;
             layers = <1>;
         };
+
+        comQ {
+            bindings = <&kp Q>;
+            key-positions = <3 2>;
+            layers = <0>;
+        };
+
+        comG {
+            bindings = <&kp G>;
+            key-positions = <14 13>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -203,10 +215,10 @@
 
         BASE_LAYER {
             bindings = <
-&none  &kp L  &kp W    &kp B      &kp Q          &kp Z        &kp F          &kp U       &kp O  &none
-&kp A  &kp R  &kp S    &kp T      &kp G          &kp M        &kp N          &kp E       &kp I  &kp Y
-&none  &kp P  &kp C    &kp D      &kp J          &kp V        &kp H          &kp K       &kp X  &none
-              &kp TAB  &_COM_DOT  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &_DOT_QUES
+&gresc          &kp L  &kp W       &kp B    &none          &kp Z        &kp F          &kp U       &kp O  &_SLASH
+&kp A           &kp R  &kp S       &kp T    &none          &kp M        &kp N          &kp E       &kp I  &kp Y
+&kp LEFT_SHIFT  &kp P  &kp C       &kp D    &kp J          &kp V        &kp H          &kp K       &kp X  &_UNDS
+                       &_COM_EXCL  &kp TAB  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &_DOT_QUES
             >;
 
             label = "BASE_LAYER";
@@ -243,6 +255,15 @@
             >;
 
             label = "COMBO_LAYER";
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans    &trans  &trans  &trans
+            >;
         };
     };
 };
