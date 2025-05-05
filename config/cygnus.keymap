@@ -15,8 +15,8 @@
             compatible = "zmk,behavior-macro";
             label = "ALPHAS";
             #binding-cells = <0>;
-            bindings = < &sl 1 >;
-	    };
+            bindings = <&sl 1>;
+        };
 
         ht: ht {
             compatible = "zmk,behavior-hold-tap";
@@ -165,15 +165,18 @@
         };
     };
 
+    macros {
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         BASE_LAYER {
             bindings = <
-       &none  &none  &none                  &none  &none  &none
-&none  &none  &none  &none                  &none  &none  &none  &none
-&none  &none  &none  &none                  &none  &none  &none  &none
-                     &none  &none    &none  &none
+        &kp B  &kp L  &kp W                            &kp F          &kp U  &kp O
+&kp A   &kp R  &kp S  &kp T                            &kp N          &kp E  &kp I  &kp Y
+&gresc  &kp P  &kp C  &kp D                            &kp H          &kp K  &kp M  &_COM_DOT
+                      &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
             >;
 
             label = "BASE_LAYER";
@@ -222,6 +225,5 @@
 
             label = "COMBO_LAYER";
         };
-
     };
 };
