@@ -168,52 +168,47 @@
         compatible = "zmk,keymap";
 
         BASE_LAYER {
+            label = "BASE_LAYER";
             bindings = <
        &none  &none  &none                  &none  &none  &none
 &none  &none  &none  &none                  &none  &none  &none  &none
 &none  &none  &none  &none                  &none  &none  &none  &none
                      &none  &none    &none  &none
             >;
-
-            label = "BASE_LAYER";
         };
 
-
-
-        LEFT_LAYER {
+        ALPHA_LAYER {
+            label = "ALPHA_LAYER";
             bindings = <
        &none  &none  &none                  &none  &none  &none
 &none  &none  &none  &none                  &none  &none  &none  &none
 &none  &none  &none  &none                  &none  &none  &none  &none
                      &none  &none    &none  &none
             >;
+        };
 
+        LEFT_LAYER {
             label = "LEFT_LAYER";
+            bindings = <
+       &none  &none  &none                  &none  &none  &none
+&none  &none  &none  &none                  &none  &none  &none  &none
+&none  &none  &none  &none                  &none  &none  &none  &none
+                     &none  &none    &none  &none
+            >;
         };
 
         RIGHT_LAYER {
+            label = "RIGHT_LAYER";
             bindings = <
        &none  &none  &none                  &none  &none  &none
 &none  &none  &none  &none                  &none  &none  &none  &none
 &none  &none  &none  &none                  &none  &none  &none  &none
                      &none  &none    &none  &none
             >;
-
-            label = "RIGHT_LAYER";
         };
 
         COMBO_LAYER {
-            bindings = <
-       &none  &none  &none                  &none  &none  &none
-&none  &none  &none  &none                  &none  &none  &none  &none
-&none  &none  &none  &none                  &none  &none  &none  &none
-                     &none  &none    &none  &none
-            >;
-
             label = "COMBO_LAYER";
-        };
-
-        layer_4 {
             bindings = <
        &none  &none  &none                  &none  &none  &none
 &none  &none  &none  &none                  &none  &none  &none  &none
@@ -221,5 +216,4 @@
                      &none  &none    &none  &none
             >;
         };
-    };
 };
