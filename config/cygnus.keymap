@@ -11,7 +11,7 @@ A, R, S, T,  N, E, I, Y,
    J, G, Q,  Z, X, V
 }
 
-#define A1 L
+#define A1 al[0]
 #define A2 W
 #define A3 B
 #define A4 F
