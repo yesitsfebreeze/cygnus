@@ -178,6 +178,17 @@
             label = "BASE_LAYER";
         };
 
+        ALPHA_LAYER {
+            bindings = <
+       &none  &none  &none                  &none  &none  &none
+&none  &none  &none  &none                  &none  &none  &none  &none
+&none  &none  &none  &none                  &none  &none  &none  &none
+                     &none  &none    &none  &none
+            >;
+
+            label = "ALPHA_LAYER";
+        };
+
         LEFT_LAYER {
             bindings = <
        &none  &none  &none                  &none  &none  &none
