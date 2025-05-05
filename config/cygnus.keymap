@@ -238,16 +238,14 @@
 
         BASE_LAYER {
             bindings = <
-                &kp L           &kp W               &kp B                                         &kp F          &kp U  &kp O
-&mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T                              &mt LEFT_SHIFT N &mt LEFT_CONTROL E  &mt LEFT_ALT I   &mt LEFT_GUI Y
-&kp LEFT_SHIFT  &kp P           &kp C               &kp D                                         &kp H          &kp K  &kp M  &_UNDS
+                &kp L           &kp W               &kp B                                         &kp F             &kp U               &kp O
+&mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T                              &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_GUI Y
+&gresc          &kp P           &kp C               &kp D                                         &kp H             &kp K               &kp M           &_COM_DOT
                                                     &kp TAB           &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE
             >;
 
             label = "BASE_LAYER";
         };
-
-
 
         LEFT_LAYER {
             bindings = <
