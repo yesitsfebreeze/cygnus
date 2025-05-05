@@ -238,9 +238,9 @@
 
         BASE_LAYER {
             bindings = <
-&lt 1 ESCAPE    &kp L           &kp W               &kp B                                         &kp F             &kp U               &kp O           &lt 1 SLASH
-&mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T                              &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_GUI Y
-&_COM_EXCL      &kp P           &kp C               &kp D                                         &kp H             &kp K               &kp M           &_DOT_QUES
+&lt 1 ESCAPE    &kp L           &kp W               &kp B                                         &kp F             &kp U               &kp O
+&lt 1 A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T                              &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &lt 1 Y
+&_COM_EXCL      &mt LEFT_GUI P           &kp C               &kp D                                         &kp H             &mt RIGHT_GUI K               &kp M           &_DOT_QUES
                                                     &kp TAB           &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE
             >;
 
@@ -249,7 +249,7 @@
 
         LEFT_LAYER {
             bindings = <
-&none           &kp HOME       &kp UP    &kp END                      &kp N7  &kp N8  &kp N9  &none
+                &kp HOME       &kp UP    &kp END                      &kp N7  &kp N8  &kp N9  &none
 &kp LEFT_SHIFT  &kp LEFT       &kp DOWN  &kp RIGHT                    &kp N4  &kp N5  &kp N6  &kp N0
 &gresc          &kp PAGE_DOWN  &none     &kp PAGE_UP                  &kp N1  &kp N2  &kp N3  &none
                                          &none        &none    &none  &none
@@ -260,7 +260,7 @@
 
         RIGHT_LAYER {
             bindings = <
-&none  &none  &none  &none                  &none  &none  &none  &none
+       &none  &none  &none                  &none  &none  &none       
 &none  &none  &none  &none                  &none  &none  &none  &none
 &none  &none  &none  &none                  &none  &none  &none  &none
                      &none  &none    &none  &none
@@ -271,7 +271,7 @@
 
         COMBO_LAYER {
             bindings = <
-&none  &none  &none  &none                  &none  &none  &none  &none
+       &none  &none  &none                  &none  &none  &none       
 &none  &none  &none  &none                  &none  &none  &none  &none
 &none  &none  &none  &none                  &none  &none  &none  &none
                      &none  &none    &none  &none
@@ -282,11 +282,11 @@
 
         layer_4 {
             bindings = <
-&none  &none  &none  &none                  &none  &none  &none  &none
+       &none  &none  &none                  &none  &none  &none       
 &none  &none  &none  &none                  &none  &none  &none  &none
 &none  &none  &none  &none                  &none  &none  &none  &none
                      &none  &none    &none  &none
             >;
         };
-    };
+    }o
 };
