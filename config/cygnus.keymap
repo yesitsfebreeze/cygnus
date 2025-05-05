@@ -4,6 +4,33 @@
 #define RIGHT_LAYER 3
 #define COMBO_LAYER 4
 
+#define A1 B
+#define A2 L
+#define A3 W
+#define A4 F
+#define A5 U 
+#define A6 O
+#define A7 A
+#define A8 R
+#define A9 S
+#define A10 T
+#define A11 N
+#define A12 E
+#define A13 I
+#define A14 Y
+#define A15 P
+#define A16 C
+#define A17 D
+#define A18 H
+#define A19 K
+#define A20 M
+#define A21 J
+#define A22 G
+#define A23 Q
+#define A24 Z
+#define A25 X
+#define A26 V
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
@@ -182,7 +209,7 @@
 
         BASE_LAYER {
             bindings = <
-        &kp B  &kp L  &kp W                            &kp F          &kp U  &kp O
+        &kp A1  &kp L  &kp W                            &kp F          &kp U  &kp O
 &kp A   &kp R  &kp S  &at 1 T                          &at 1 N          &kp E  &kp I  &kp Y
 &gresc  &kp P  &kp C  &kp D                            &kp H          &kp K  &kp M  &_COM_DOT
                       &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
