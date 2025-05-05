@@ -210,7 +210,7 @@
         BASE_LAYER {
             bindings = <
         &kp A1  &kp A2  &kp A3                            &kp A4          &kp A5  &kp A6
-&kp A7   &kp A8  &kp A9  &at 1 A10                          &at 1 A11          &kp A12  &kp A13  &kp A14
+&kp A7   &at 1  A8  &kp A9  &kp A10                          &kp A11          &kp A12  &at 1 A13  &kp A14
 &gresc  &kp A15  &kp A16  &kp A17                            &kp A18          &kp A19  &kp A20  &_COM_DOT
                       &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
             >;
@@ -222,7 +222,7 @@
             bindings = <
        &trans  &trans  &kp A21                  &kp A24  &trans  &trans
 &trans  &none  &trans  &kp A22                  &kp A25  &trans  &none   &trans
-&trans  &kp Q  &trans  &kp A23                  &kp A26  &trans  &trans  &trans
+&trans  &trans  &trans  &kp A23                  &kp A26  &trans  &trans  &trans
                      &trans  &trans    &trans  &trans
             >;
 
