@@ -24,6 +24,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&kp>;
+
             display-name = "Alpha-Tap";
         };
 
@@ -182,10 +183,10 @@
 
         BASE_LAYER {
             bindings = <
-        &kp L     &kp W   &kp B        &kp F    &kp U  &kp O
-&kp A  &kp R  &kp S   &kp T      &kp N    &kp E  &kp I  &kp Y
-&gresc  &kp P    &kp C  &kp D      &kp H     &kp K  &kp M  &_COM_DOT
-                   &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
+        &kp L    &kp W  &kp B                            &kp F          &kp U  &kp O
+&kp A   &at 1 R  &kp S  &kp T                            &kp N          &kp E  &at 1 I  &kp G
+&gresc  &kp P    &kp C  &kp D                            &kp H          &kp K  &kp M    &_COM_DOT
+                        &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
             >;
 
             label = "BASE_LAYER";
