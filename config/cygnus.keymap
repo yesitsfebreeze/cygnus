@@ -184,7 +184,7 @@
             bindings = <
         &kp L     &kp W   &kp B        &kp F    &kp U  &kp O
 &kp A  &kp R  &kp S   &kp T      &kp N    &kp E  &kp I  &kp Y
-&gresc  &kp P    &kp C  &kp C      &kp H     &kp K  &kp M  &_COM_DOT
+&gresc  &kp P    &kp C  &kp D      &kp H     &kp K  &kp M  &_COM_DOT
                    &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
             >;
 
