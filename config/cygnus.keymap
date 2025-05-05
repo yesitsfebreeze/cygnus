@@ -19,5 +19,12 @@
 
         BASE_LAYER {
             label = "BASE_LAYER";
+            bindings = <
+&none  &none  &none  &none                  &none  &none  &none  &none
+&none  &none  &none  &none                  &none  &none  &none  &none
+&none  &none  &none  &none                  &none  &none  &none  &none
+                     &none  &none    &none  &none
+            >;
         };
+
 };
