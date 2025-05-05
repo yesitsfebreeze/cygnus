@@ -209,9 +209,9 @@
 
         BASE_LAYER {
             bindings = <
-        &kp A1  &kp L  &kp W                            &kp F          &kp U  &kp O
-&kp A   &kp R  &kp S  &at 1 T                          &at 1 N          &kp E  &kp I  &kp Y
-&gresc  &kp P  &kp C  &kp D                            &kp H          &kp K  &kp M  &_COM_DOT
+        &kp A1  &kp A2  &kp A3                            &kp A4          &kp A5  &kp A6
+&kp A7   &kp A8  &kp A9  &at 1 A10                          &at 1 A11          &kp A12  &kp A13  &kp A14
+&gresc  &kp A15  &kp A16  &kp A17                            &kp A18          &kp A19  &kp A20  &_COM_DOT
                       &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
             >;
 
@@ -220,9 +220,9 @@
 
         ALPHA_LAYER {
             bindings = <
-       &trans  &trans  &trans                  &trans  &trans  &trans
-&trans  &trans  &trans  &none                  &none  &trans  &trans  &trans
-&trans  &kp Q  &trans  &trans                  &trans  &trans  &trans  &trans
+       &trans  &trans  &kp A21                  &kp A24  &trans  &trans
+&trans  &none  &trans  &kp A22                  &kp A25  &trans  &none   &trans
+&trans  &kp Q  &trans  &kp A23                  &kp A26  &trans  &trans  &trans
                      &trans  &trans    &trans  &trans
             >;
 
