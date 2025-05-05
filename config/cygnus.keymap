@@ -238,9 +238,9 @@
 
         BASE_LAYER {
             bindings = <
-&none           &kp L           &kp W               &kp B                                         &kp F             &kp U               &kp O           &none
+&lt 1 ESCAPE    &kp L           &kp W               &kp B                                         &kp F             &kp U               &kp O           &lt 1 SLASH
 &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T                              &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_GUI Y
-&gresc          &kp P           &kp C               &kp D                                         &kp H             &kp K               &kp M           &_COM_DOT
+&_COM_EXCL      &kp P           &kp C               &kp D                                         &kp H             &kp K               &kp M           &_DOT_QUES
                                                     &kp TAB           &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE
             >;
 
@@ -260,10 +260,10 @@
 
         RIGHT_LAYER {
             bindings = <
-&none  &none  &none  &none    &none  &none  &none  &none
-&none  &none  &none  &none    &none  &none  &none  &none
-&none  &none  &none  &none    &none  &none  &none  &none
-              &none  &none    &none  &none
+&none  &none  &none  &none                  &none  &none  &none  &none
+&none  &none  &none  &none                  &none  &none  &none  &none
+&none  &none  &none  &none                  &none  &none  &none  &none
+                     &none  &none    &none  &none
             >;
 
             label = "RIGHT_LAYER";
@@ -271,10 +271,10 @@
 
         COMBO_LAYER {
             bindings = <
-&none  &none  &none  &none    &none  &none  &none  &none
-&none  &none  &none  &none    &none  &none  &none  &none
-&none  &none  &none  &none    &none  &none  &none  &none
-              &none  &none    &none  &none
+&none  &none  &none  &none                  &none  &none  &none  &none
+&none  &none  &none  &none                  &none  &none  &none  &none
+&none  &none  &none  &none                  &none  &none  &none  &none
+                     &none  &none    &none  &none
             >;
 
             label = "COMBO_LAYER";
@@ -282,10 +282,10 @@
 
         layer_4 {
             bindings = <
-&none  &none  &none  &none    &none  &none  &none  &none
-&none  &none  &none  &none    &none  &none  &none  &none
-&none  &none  &none  &none    &none  &none  &none  &none
-              &none  &none    &none  &none
+&none  &none  &none  &none                  &none  &none  &none  &none
+&none  &none  &none  &none                  &none  &none  &none  &none
+&none  &none  &none  &none                  &none  &none  &none  &none
+                     &none  &none    &none  &none
             >;
         };
     };
