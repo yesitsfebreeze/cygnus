@@ -164,7 +164,7 @@
             bindings = <
                 &kp L           &kp W               &kp B                                         &kp F          &kp U  &kp O
 &kp A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T                              &mt RIGHT_SHIFT N &mt RIGHT_CONTROL E  &mt RIGHT_ALT I   &kp Y
-&kp LEFT_SHIFT  &mt LEFT_GUI P           &kp C               &kp D                                         &kp H          &mt RIGHT_GUI K  &kp M  &_UNDS
+&kp LEFT_SHIFT  &kpI P           &mt LEFT_GUI C               &kp D                                         &kp H          &mt RIGHT_GUI K  &kp M  &_UNDS
                                                     &kp TAB           &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE
             >;
 
