@@ -238,7 +238,7 @@
 
         BASE_LAYER {
             bindings = <
-&lt 1 ESCAPE    &kp L           &kp W               &kp B                                         &kp F             &kp U               &kp O           &lt 1 SLASH
+&lt 1 &gresc    &kp L           &kp W               &kp B                                         &kp F             &kp U               &kp O           &lt 1 &_SLASH
 &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T                              &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_GUI Y
 &_COM_EXCL      &kp P           &kp C               &kp D                                         &kp H             &kp K               &kp M           &_DOT_QUES
                                                     &kp TAB           &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE
