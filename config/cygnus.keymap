@@ -18,11 +18,12 @@
             bindings = <&sl 1>;
         };
 
-         at: alpha_tap {
+        at: alpha_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             bindings = <&mo>, <&kp>;
+
             display-name = "Alpha-Tap";
         };
 
@@ -192,10 +193,10 @@
 
         ALPHA_LAYER {
             bindings = <
-        &trans  &trans  &trans   &trans  &trans  &trans
-&trans  &none   &trans  &trans   &trans  &trans  &none   &trans
-&trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
-                &trans  &trans   &trans  &trans
+        &trans  &kp Q  &trans                    &trans  &kp Z  &trans
+&trans  &none   &kp Y  &trans                    &trans  &kp J  &none   &trans
+&trans  &trans  &kp X  &trans                    &trans  &kp V  &trans  &trans
+                       &trans  &trans    &trans  &trans
             >;
 
             label = "ALPHA_LAYER";
