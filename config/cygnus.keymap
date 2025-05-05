@@ -5,7 +5,7 @@
 #define COMBO_LAYER 4
 
 int al[] = {
-   L, W, B,  F, U, O
+   X, W, B,  F, U, O
 A, R, S, T,  N, E, I, Y,
    P, C, D,  H, K, M,
    J, G, Q,  Z, X, V
