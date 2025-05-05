@@ -18,11 +18,12 @@
             bindings = <&sl 1>;
         };
 
-         at: alpha_tap {
+        at: alpha_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             bindings = <&mo>, <&kp>;
+
             display-name = "Alpha-Tap";
         };
 
@@ -181,10 +182,10 @@
 
         BASE_LAYER {
             bindings = <
-        &kp L     &kp W   &kp B        &kp F    &kp U  &kp O
-&kp A  &at 1  R  &kp S   &kp T      &kp N    &kp E  &at 1 I  &kp Y
-&gresc  &kp P    &kp C  &kp C      &kp H     &kp K  &kp M  &_COM_DOT
-                   &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
+        &kp L    &kp W  &kp B                            &kp F          &kp U  &kp O
+&kp A   &at 1 R  &kp S  &kp T                            &kp N          &kp E  &at 1 I  &kp G
+&gresc  &kp P    &kp C  &kp D                            &kp H          &kp K  &kp M    &_COM_DOT
+                        &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
             >;
 
             label = "BASE_LAYER";
@@ -192,10 +193,10 @@
 
         ALPHA_LAYER {
             bindings = <
-        &trans  &trans  &trans   &trans  &trans  &trans
-&trans  &none   &trans  &trans   &trans  &trans  &none   &trans
-&trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
-                &trans  &trans   &trans  &trans
+        &trans  &kp Q  &trans                    &trans  &kp Z  &trans
+&trans  &none   &kp Y  &trans                    &trans  &kp J  &none   &trans
+&trans  &trans  &kp X  &trans                    &trans  &kp V  &trans  &trans
+                       &trans  &trans    &trans  &trans
             >;
 
             label = "ALPHA_LAYER";
