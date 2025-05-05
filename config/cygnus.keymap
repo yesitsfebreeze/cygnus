@@ -174,17 +174,8 @@
 &none  &none  &none  &none                  &none  &none  &none  &none
                      &none  &none    &none  &none
             >;
-            label = "BASE_LAYER";
-        };
 
-        ALPHA_LAYER {;
-            bindings = <
-       &none  &none  &none                  &none  &none  &none
-&none  &none  &none  &none                  &none  &none  &none  &none
-&none  &none  &none  &none                  &none  &none  &none  &none
-                     &none  &none    &none  &none
-            >;
-            label = "ALPHA_LAYER"
+            label = "BASE_LAYER";
         };
 
         LEFT_LAYER {
@@ -194,6 +185,7 @@
 &none  &none  &none  &none                  &none  &none  &none  &none
                      &none  &none    &none  &none
             >;
+
             label = "LEFT_LAYER";
         };
 
@@ -204,6 +196,7 @@
 &none  &none  &none  &none                  &none  &none  &none  &none
                      &none  &none    &none  &none
             >;
+
             label = "RIGHT_LAYER";
         };
 
@@ -214,6 +207,9 @@
 &none  &none  &none  &none                  &none  &none  &none  &none
                      &none  &none    &none  &none
             >;
+
             label = "COMBO_LAYER";
         };
+
+    };
 };
