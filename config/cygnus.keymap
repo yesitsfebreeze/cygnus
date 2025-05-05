@@ -198,37 +198,37 @@
 
         com_q {
             bindings = <&kp Q>;
-            key-positions = <2 1>;
+            key-positions = <3 2>;
             layers = <0>;
         };
 
         com_g {
             bindings = <&kp G>;
-            key-positions = <9 8>;
+            key-positions = <13 12>;
             layers = <0>;
         };
 
         com_j {
             bindings = <&kp J>;
-            key-positions = <16 17>;
+            key-positions = <23 22>;
             layers = <0>;
         };
 
         com_z {
             bindings = <&kp Z>;
-            key-positions = <3 4>;
+            key-positions = <7 6>;
             layers = <0>;
         };
 
         com_x {
             bindings = <&kp X>;
-            key-positions = <10 11>;
+            key-positions = <17 16>;
             layers = <0>;
         };
 
         com_v {
             bindings = <&kp V>;
-            key-positions = <26 27 18 19>;
+            key-positions = <26 27>;
             layers = <0>;
         };
     };
@@ -238,10 +238,10 @@
 
         BASE_LAYER {
             bindings = <
-       &none  &kp L  &kp W                  &kp B           &none           &kp Z
-&kp F  &kp U  &kp O  &none                  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T
-&none  &kp M  &kp N  &kp E                  &kp I           &kp Y           &kp LEFT_SHIFT      &kp P
-                     &kp C  &kp D    &kp J  &kp V
+                &kp L           &kp W               &kp B                &kp F          &kp U       &kp O  
+&mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T     &kp N          &kp E       &kp I  &kp Y
+&kp LEFT_SHIFT  &kp P           &kp C               &kp D                &kp H          &kp K       &kp M  &_UNDS
+                                &kp TAB            &lt 1 SPACE           &lt 2 ENTER  &kp BACKSPACE
             >;
 
             label = "BASE_LAYER";
@@ -249,10 +249,10 @@
 
         LEFT_LAYER {
             bindings = <
-       &none  &kp HOME  &kp UP                      &kp END  &none     &none
-&none  &none  &none     &none                       &none    &kp LEFT  &kp DOWN  &kp RIGHT
-&none  &none  &none     &none                       &none    &none     &none     &kp PG_DN
-                        &none   &kp PG_UP    &none  &none
+       &none  &none &none    &none  &none &none
+&none  &none  &none &none    &none  &none  &none &none
+&none  &none  &none &none    &none  &none  &none &none
+              &none &none    &none  &none
             >;
 
             label = "LEFT_LAYER";
@@ -260,10 +260,10 @@
 
         RIGHT_LAYER {
             bindings = <
-             &none       &kp N1     &kp N2                         &kp N3   &none      &kp K_REDO
-&kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO                     &kp N0   &kp N4     &kp N5      &kp N6
-&none        &caps_word  &kp LEFT   &kp DOWN                       &kp UP   &kp RIGHT  &none       &kp N7
-                                    &kp N8      &_N9_TLD    &none  &kp INS
+       &none  &none &none    &none  &none &none
+&none  &none  &none &none    &none  &none  &none &none
+&none  &none  &none &none    &none  &none  &none &none
+              &none &none    &none  &none
             >;
 
             label = "RIGHT_LAYER";
@@ -271,10 +271,10 @@
 
         COMBO_LAYER {
             bindings = <
-       &kp F10  &kp F1  &kp F2                   &kp F3   &none   &none
-&none  &none    &none   &none                    &kp F11  &kp F4  &kp F5   &kp F6
-&none  &none    &none   &none                    &none    &none   &kp F12  &kp F7
-                        &kp F8  &kp F9    &none  &none
+       &none  &none &none    &none  &none &none
+&none  &none  &none &none    &none  &none  &none &none
+&none  &none  &none &none    &none  &none  &none &none
+              &none &none    &none  &none
             >;
 
             label = "COMBO_LAYER";
@@ -282,10 +282,10 @@
 
         layer_4 {
             bindings = <
-        &trans  &trans  &trans                    &trans  &trans  &trans
-&trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+       &none  &none &none    &none  &none &none
+&none  &none  &none &none    &none  &none  &none &none
+&none  &none  &none &none    &none  &none  &none &none
+              &none &none    &none  &none
             >;
         };
     };
