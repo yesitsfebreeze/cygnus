@@ -4,40 +4,6 @@
 #define RIGHT_LAYER 3
 #define COMBO_LAYER 4
 
-int al[] = {
-   X, W, B,  F, U, O
-A, R, S, T,  N, E, I, Y,
-   P, C, D,  H, K, M,
-   J, G, Q,  Z, X, V
-}
-
-#define A1 al[0]
-#define A2 W
-#define A3 B
-#define A4 F
-#define A5 U
-#define A6 O
-#define A7 A
-#define A8 R
-#define A9 S
-#define A10 T
-#define A11 N
-#define A12 E
-#define A13 I
-#define A14 Y
-#define A15 P
-#define A16 C
-#define A17 D
-#define A18 H
-#define A19 K
-#define A20 M
-#define A21 J
-#define A22 G
-#define A23 Q
-#define A24 Z
-#define A25 X
-#define A26 V
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
@@ -215,9 +181,9 @@ A, R, S, T,  N, E, I, Y,
 
         BASE_LAYER {
             bindings = <
-        &kp A1     &kp A2   &kp A3        &kp A4    &kp A5  &kp A6
-&kp A7  &at 1  A8  &kp A9   &kp A10      &kp A11    &kp A12  &at 1 A13  &kp A14
-&gresc  &kp A15    &kp A16  &kp A17      &kp A18     &kp A19  &kp A20  &_COM_DOT
+        &kp L     &kp W   &kp B        &kp F    &kp U  &kp O
+&kp A  &at 1  R  &kp S   &kp T      &kp N    &kp E  &at 1 I  &kp Y
+&gresc  &kp P    &kp C  &kp C      &kp H     &kp K  &kp M  &_COM_DOT
                    &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
             >;
 
@@ -226,10 +192,10 @@ A, R, S, T,  N, E, I, Y,
 
         ALPHA_LAYER {
             bindings = <
-        &trans  &trans  &kp A21    &kp A24  &trans  &trans
-&trans  &none   &trans  &kp A22    &kp A25  &trans  &none   &trans
-&trans  &trans  &trans  &kp A23    &kp A26  &trans  &trans  &trans
-                &trans  &trans     &trans  &trans
+        &trans  &trans  &trans   &trans  &trans  &trans
+&trans  &none   &trans  &trans   &trans  &trans  &none   &trans
+&trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
+                &trans  &trans   &trans  &trans
             >;
 
             label = "ALPHA_LAYER";
