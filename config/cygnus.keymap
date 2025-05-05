@@ -157,90 +157,14 @@
         };
     };
 
-    macros {
-        MA_EQL: MA_EQL {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp EQUAL>, <&macro_press>;
-
-            label = "MA_EQL";
-        };
-
-        MA_POINTER: MA_POINTER {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS &kp GT>;
-            label = "MA_POINTER";
-        };
-
-        MA_OR: MA_OR {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp PIPE &kp PIPE>;
-            label = "MA_OR";
-        };
-
-        MA_AND: MA_AND {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp AMPS &kp AMPS>;
-            label = "MA_AND";
-        };
-    };
-
-    //  0  1  2  3  4    5  6  7  8  9
-    // 10 11 12 13 14   15 16 17 18 19
-    // 20 21 22 23 24   25 26 27 28 29
-    // -- -- -- 33 34   35 36 -- -- --
-
-    combos {
-        compatible = "zmk,combos";
-
-        com_q {
-            bindings = <&kp Q>;
-            key-positions = <2 1>;
-            layers = <0>;
-        };
-
-        com_g {
-            bindings = <&kp G>;
-            key-positions = <9 8>;
-            layers = <0>;
-        };
-
-        com_j {
-            bindings = <&kp J>;
-            key-positions = <23 22>;
-            layers = <0>;
-        };
-
-        com_z {
-            bindings = <&kp Z>;
-            key-positions = <3 4>;
-            layers = <0>;
-        };
-
-        com_x {
-            bindings = <&kp X>;
-            key-positions = <10 11>;
-            layers = <0>;
-        };
-
-        com_v {
-            bindings = <&kp V>;
-            key-positions = <26 27 18 19>;
-            layers = <0>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         BASE_LAYER {
             bindings = <
                 &kp L           &kp W               &kp B                                         &kp F          &kp U  &kp O
-&mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T                              &mt LEFT_SHIFT N &mt LEFT_CONTROL E  &mt LEFT_ALT I   &mt LEFT_GUI Y
-&kp LEFT_SHIFT  &kp P           &kp C               &kp D                                         &kp H          &kp K  &kp M  &_UNDS
+&kp A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T                              &mt RIGHT_SHIFT N &mt RIGHT_CONTROL E  &mt RIGHT_ALT I   &kp Y
+&kp LEFT_SHIFT  &mt LEFT_GUI P           &kp C               &kp D                                         &kp H          &mt RIGHT_GUI K  &kp M  &_UNDS
                                                     &kp TAB           &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE
             >;
 
