@@ -194,8 +194,8 @@
 
         ALPHA_LAYER {
             bindings = <
-        &trans  &kp Q  &trans                    &trans  &kp Z  &trans
-&trans  &trans  &kp Y  &trans                    &trans  &kp J  &trans  &trans
+        &trans  &kp Y  &trans                    &trans  &kp Z  &trans
+&trans  &trans  &kp Q  &trans                    &trans  &kp J  &trans  &trans
 &trans  &trans  &kp X  &trans                    &trans  &kp V  &trans  &trans
                        &trans  &trans    &trans  &trans
             >;
