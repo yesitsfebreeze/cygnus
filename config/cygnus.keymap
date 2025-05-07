@@ -196,7 +196,7 @@
             bindings = <
         &trans  &kp Y  &trans                    &trans  &trans  &trans
 &trans  &trans  &kp J  &trans                    &trans  &trans  &trans  &trans
-&trans  &trans  &kp X  &trans                    &trans  &trans  &trans  &trans
+&trans  &trans  &kp V  &trans                    &trans  &trans  &trans  &trans
                        &trans  &trans    &trans  &trans
             >;
 
@@ -207,7 +207,7 @@
             bindings = <
         &trans  &trans  &trans                    &trans  &kp Z  &trans
 &trans  &trans  &trans  &trans                    &trans  &kp Q  &trans  &trans
-&trans  &trans  &trans  &trans                    &trans  &kp V  &trans  &trans
+&trans  &trans  &trans  &trans                    &trans  &kp X  &trans  &trans
                         &trans  &trans    &trans  &trans
             >;
 
