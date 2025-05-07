@@ -184,7 +184,7 @@
         BASE_LAYER {
             bindings = <
          &kp L  &kp W  &kp B                            &kp U          &kp O  &kp G
-&at 1 A  &kp R  &kp S  &kp T                            &kp N          &kp E  &kp I  &at 1 F
+&kp A  &kp R  &at 2 S  &kp T                            &kp N          &at 1 E  &kp I  &kp F
 &gresc   &kp P  &kp C  &kp D                            &kp H          &kp K  &kp M  &_COM_DOT
                        &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
             >;
@@ -192,15 +192,26 @@
             label = "BASE_LAYER";
         };
 
-        ALPHA_LAYER {
+        ALPHA_LAYER_1 {
             bindings = <
-        &trans  &kp Y  &trans                    &trans  &kp Z  &trans
-&trans  &trans  &kp J  &trans                    &trans  &kp Q  &trans  &trans
-&trans  &trans  &kp X  &trans                    &trans  &kp V  &trans  &trans
+        &trans  &kp Y  &trans                    &trans  &trans  &trans
+&trans  &trans  &kp J  &trans                    &trans  &trans  &trans  &trans
+&trans  &trans  &kp X  &trans                    &trans  &trans  &trans  &trans
                        &trans  &trans    &trans  &trans
             >;
 
-            label = "ALPHA_LAYER";
+            label = "ALPHA_LAYER_1";
+        };
+
+        ALPHA_LAYER_2 {
+            bindings = <
+        &trans  &trans  &trans                    &trans  &kp Z  &trans
+&trans  &trans  &trans  &trans                    &trans  &kp Q  &trans  &trans
+&trans  &trans  &trans  &trans                    &trans  &kp V  &trans  &trans
+                        &trans  &trans    &trans  &trans
+            >;
+
+            label = "ALPHA_LAYER_2";
         };
 
         LEFT_LAYER {
