@@ -22,7 +22,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <1>;
+            tapping-term-ms = <120>;
             bindings = <&mo>, <&kp>;
 
             display-name = "Alpha-Tap";
