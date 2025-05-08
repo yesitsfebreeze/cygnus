@@ -10,18 +10,19 @@
 
 / {
     behaviors {
-        alphas: _ALPHAS {
-            compatible = "zmk,behavior-macro";
-            display-name = "ALPHAS";
-            #binding-cells = <0>;
-            bindings = <&sl 1>;
+        beta: beta {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <120>;
+            bindings = <&mo>, <&kp>;
+            display-name = "beta";
         };
 
         ht: ht {
             compatible = "zmk,behavior-hold-tap";
             display-name = "HT";
             bindings = <&kp>, <&kp>;
-
             quick-tap-ms = <180>;
             #binding-cells = <2>;
             tapping-term-ms = <180>;
@@ -183,7 +184,7 @@
         ALPHA_LAYER {
             bindings = <
         &kp L  &kp W  &kp B                            &kp F          &kp U  &kp O
-&kp A   &kp R  &kp S  &kp T                            &kp N          &kp E  &kp I  &kp G
+&beta 1 A   &kp R  &kp S  &kp T                            &kp N          &kp E  &kp I  &beta 1 G
 &gresc  &kp P  &kp C  &kp D                            &kp H          &kp K  &kp M  &_COM_DOT
                       &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
             >;
@@ -194,7 +195,7 @@
         BETA_LAYER {
             bindings = <
         &trans  &kp Y   &trans                    &trans  &kp Z   &trans
-&trans  &kp J   &trans  &trans                    &trans  &trans  &kp Q   &trans
+&trans  &trans  &trans  &trans  &kp J             &kp Q   &trans  &trans  &trans
 &trans  &trans  &kp V   &trans                    &trans  &kp X   &trans  &trans
                         &trans  &trans    &trans  &trans
             >;
