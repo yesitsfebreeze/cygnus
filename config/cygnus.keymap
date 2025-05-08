@@ -17,71 +17,6 @@
             bindings = <&sl 1>;
         };
 
-        tap_y: tap_y {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <120>;
-            bindings = <&mo>, <&kp>;
-
-            display-name = "tap_y";
-            hold-trigger-key-positions = <1>;
-        };
-
-        tap_j: tap_j {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <120>;
-            bindings = <&mo>, <&kp>;
-
-            display-name = "tap_j";
-            hold-trigger-key-positions = <7>;
-        };
-
-        tap_v: tap_v {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <120>;
-            bindings = <&mo>, <&kp>;
-
-            display-name = "tap_v";
-            hold-trigger-key-positions = <16>;
-        };
-
-        tap_z: tap_z {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <120>;
-            bindings = <&mo>, <&kp>;
-
-            hold-trigger-key-positions = <4>;
-        };
-
-        tap_q: tap_q {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <120>;
-            bindings = <&mo>, <&kp>;
-
-            display-name = "tap_q";
-            hold-trigger-key-positions = <12>;
-        };
-
-        tap_x: tap_x {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <120>;
-            bindings = <&mo>, <&kp>;
-
-            display-name = "tap_x";
-            hold-trigger-key-positions = <19>;
-        };
-
         ht: ht {
             compatible = "zmk,behavior-hold-tap";
             display-name = "HT";
@@ -247,10 +182,10 @@
 
         ALPHA_LAYER {
             bindings = <
-        &kp L       &tap_z 1 W  &kp B                            &kp F          &tap_y 1 U  &kp O
-&kp A   &tap_q 1 R  &kp S       &kp T                            &kp N          &kp E       &tap_j 1 I  &kp G
-&gresc  &kp P       &tap_x 1 C  &kp D                            &kp H          &tap_v 1 K  &kp M       &_COM_DOT
-                                &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
+        &kp L  &kp W  &kp B                            &kp F          &kp U  &kp O
+&kp A   &kp R  &kp S  &kp T                            &kp N          &kp E  &kp I  &kp G
+&gresc  &kp P  &kp C  &kp D                            &kp H          &kp K  &kp M  &_COM_DOT
+                      &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
             >;
 
             display-name = "ALPHA_LAYER";
