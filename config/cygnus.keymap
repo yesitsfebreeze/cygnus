@@ -168,15 +168,7 @@
     macros {
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        combo_z {
-            bindings = <&kp Z>;
-            key-positions = <8 4>;
-            layers = <0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
