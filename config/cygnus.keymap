@@ -26,6 +26,7 @@
             bindings = <&mo>, <&kp>;
 
             display-name = "Alpha-Tap";
+            hold-trigger-key-positions = <4 11 19>;
         };
 
         ht: ht {
