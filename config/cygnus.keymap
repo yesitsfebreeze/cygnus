@@ -186,9 +186,9 @@
 
         BETA_LAYER {
             bindings = <
-        &trans  &kp Y   &trans                    &trans  &kp Z   &trans
-&trans  &trans  &trans  &trans  &kp J             &kp Q   &trans  &trans  &trans
-&trans  &trans  &kp V   &trans                    &trans  &kp X   &trans  &trans
+        &trans  &kp Y   &trans            &trans  &kp Z   &trans
+&trans  &trans  &trans  &kp J             &kp Q   &trans  &trans  &trans
+&trans  &trans  &kp V   &trans            &trans  &kp X   &trans  &trans
                         &trans  &trans    &trans  &trans
             >;
 
