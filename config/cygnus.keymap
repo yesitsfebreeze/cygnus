@@ -57,7 +57,7 @@
             tapping-term-ms = <120>;
             bindings = <&mo>, <&kp>;
 
-            display-name = "tap_z;
+            display-name = "tap_z";
 
             hold-trigger-key-positions = <4>;
         };
@@ -69,7 +69,7 @@
             tapping-term-ms = <120>;
             bindings = <&mo>, <&kp>;
 
-            display-name = "tap_q;
+            display-name = "tap_q";
 
             hold-trigger-key-positions = <12>;
         };
@@ -81,7 +81,7 @@
             tapping-term-ms = <120>;
             bindings = <&mo>, <&kp>;
 
-            display-name = "tap_x;
+            display-name = "tap_x";
 
             hold-trigger-key-positions = <19>;
         };
