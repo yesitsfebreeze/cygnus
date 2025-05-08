@@ -26,7 +26,7 @@
             bindings = <&mo>, <&kp>;
 
             display-name = "Alpha-Tap-Left";
-            hold-trigger-key-positions = <4 11 19>;
+            hold-trigger-key-positions = <4 11 19 5 12 13 20 18 10 3>;
         };
 
         atr: alpha_tap_right {
@@ -37,7 +37,7 @@
             bindings = <&mo>, <&kp>;
 
             display-name = "Alpha-Tap-Right";
-            hold-trigger-key-positions = <1 8 16>;
+            hold-trigger-key-positions = <1 8 16 0 2 9 17 15 7 6>;
         };
 
         ht: ht {
