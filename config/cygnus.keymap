@@ -13,7 +13,7 @@
     behaviors {
         alphas: _ALPHAS {
             compatible = "zmk,behavior-macro";
-            label = "ALPHAS";
+            display-name = "ALPHAS";
             #binding-cells = <0>;
             bindings = <&sl 1>;
         };
@@ -42,7 +42,7 @@
 
         ht: ht {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT";
+            display-name = "HT";
             bindings = <&kp>, <&kp>;
 
             quick-tap-ms = <180>;
@@ -53,7 +53,7 @@
 
         _LPRN: _LPRN {
             compatible = "zmk,behavior-mod-morph";
-            label = "_LPRN";
+            display-name = "_LPRN";
             bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACE>;
 
             #binding-cells = <0>;
@@ -62,7 +62,7 @@
 
         _RPRN: _RPRN {
             compatible = "zmk,behavior-mod-morph";
-            label = "_RPRN";
+            display-name = "_RPRN";
             bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACE>;
 
             #binding-cells = <0>;
@@ -71,7 +71,7 @@
 
         _SLASH: _SLASH {
             compatible = "zmk,behavior-mod-morph";
-            label = "_SLASH";
+            display-name = "_SLASH";
             bindings = <&kp SLASH>, <&kp NON_US_BACKSLASH>;
 
             #binding-cells = <0>;
@@ -80,7 +80,7 @@
 
         _LBRKT: _LBRKT {
             compatible = "zmk,behavior-mod-morph";
-            label = "_LBRKT";
+            display-name = "_LBRKT";
             bindings = <&kp LEFT_BRACKET>, <&kp LESS_THAN>;
 
             #binding-cells = <0>;
@@ -89,7 +89,7 @@
 
         _RBRKT: _RBRKT {
             compatible = "zmk,behavior-mod-morph";
-            label = "_RBRKT";
+            display-name = "_RBRKT";
             bindings = <&kp RIGHT_BRACKET>, <&kp GREATER_THAN>;
 
             #binding-cells = <0>;
@@ -98,7 +98,7 @@
 
         _COL: _COL {
             compatible = "zmk,behavior-mod-morph";
-            label = "_COL";
+            display-name = "_COL";
             bindings = <&kp COLON>, <&kp SEMICOLON>;
 
             #binding-cells = <0>;
@@ -107,7 +107,7 @@
 
         _QUOT: _QUOT {
             compatible = "zmk,behavior-mod-morph";
-            label = "_QUOT";
+            display-name = "_QUOT";
             bindings = <&kp DOUBLE_QUOTES>, <&kp SQT>;
 
             #binding-cells = <0>;
@@ -116,7 +116,7 @@
 
         _DOT_QUES: _DOT_QUES {
             compatible = "zmk,behavior-mod-morph";
-            label = "_DOT_QUES";
+            display-name = "_DOT_QUES";
             bindings = <&kp PERIOD>, <&kp QUESTION>;
 
             #binding-cells = <0>;
@@ -125,7 +125,7 @@
 
         _COM_EXCL: _COM_EXCL {
             compatible = "zmk,behavior-mod-morph";
-            label = "_COM_EXCL";
+            display-name = "_COM_EXCL";
             bindings = <&kp COMMA>, <&kp EXCL>;
 
             #binding-cells = <0>;
@@ -134,7 +134,7 @@
 
         _EQL: _EQL {
             compatible = "zmk,behavior-mod-morph";
-            label = "_EQL";
+            display-name = "_EQL";
             bindings = <&kp EQUAL>, <&kp EQUAL>;
 
             #binding-cells = <0>;
@@ -143,7 +143,7 @@
 
         _UNDS: _UNDS {
             compatible = "zmk,behavior-mod-morph";
-            label = "_UNDS";
+            display-name = "_UNDS";
             bindings = <&kp UNDERSCORE>, <&kp UNDERSCORE>;
 
             #binding-cells = <0>;
@@ -152,7 +152,7 @@
 
         _COM_DOT: _COM_DOT {
             compatible = "zmk,behavior-mod-morph";
-            label = "_COM_DOT";
+            display-name = "_COM_DOT";
             bindings = <&kp COMMA>, <&kp PERIOD>;
 
             #binding-cells = <0>;
@@ -161,7 +161,7 @@
 
         _BSP_DEL: _BSP_DEL {
             compatible = "zmk,behavior-mod-morph";
-            label = "_BSP_DEL";
+            display-name = "_BSP_DEL";
             bindings = <&kp BACKSPACE>, <&kp DEL>;
 
             #binding-cells = <0>;
@@ -170,7 +170,7 @@
 
         _N9_TLD: _N9_TLD {
             compatible = "zmk,behavior-mod-morph";
-            label = "_N9_TLD";
+            display-name = "_N9_TLD";
             bindings = <&kp N9>, <&kp TILDE>;
 
             #binding-cells = <0>;
@@ -179,7 +179,7 @@
 
         _MNS_PLS: _MNS_PLS {
             compatible = "zmk,behavior-mod-morph";
-            label = "_MNS_PLS";
+            display-name = "_MNS_PLS";
             bindings = <&kp MINUS>, <&kp PLUS>;
 
             #binding-cells = <0>;
@@ -206,15 +206,15 @@
         BASE_LAYER {
             bindings = <
         &kp L  &kp W     &kp B                            &kp F          &kp U     &kp O
-&kp A   &kp R  &atl 1 S  &kp T                            &kp N          &atr 2 E  &kp I  &kp G
+&kp A   &kp R  &atl 2 S  &kp T                            &kp N          &atr 1 E  &kp I  &kp G
 &gresc  &kp P  &kp C     &kp D                            &kp H          &kp K     &kp M  &_COM_DOT
                          &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
             >;
 
-            label = "BASE_LAYER";
+            display-name = "BASE_LAYER";
         };
 
-        ALPHA_LAYER_1 {
+        ALPHA_LAYER_LEFT {
             bindings = <
         &trans  &kp Y  &trans                    &trans  &trans  &trans
 &trans  &trans  &kp J  &trans                    &trans  &trans  &trans  &trans
@@ -222,10 +222,10 @@
                        &trans  &trans    &trans  &trans
             >;
 
-            label = "ALPHA_LAYER_1";
+            display-name = "ALPHA_LAYER_LEFT";
         };
 
-        ALPHA_LAYER_2 {
+        ALPHA_LAYER_RIGHT {
             bindings = <
         &trans  &trans  &trans                    &trans  &kp Z  &trans
 &trans  &trans  &trans  &trans                    &trans  &kp Q  &trans  &trans
@@ -233,7 +233,7 @@
                         &trans  &trans    &trans  &trans
             >;
 
-            label = "ALPHA_LAYER_2";
+            display-name = "ALPHA_LAYER_RIGHT";
         };
 
         LEFT_LAYER {
@@ -244,7 +244,7 @@
                      &none  &none    &none  &none
             >;
 
-            label = "LEFT_LAYER";
+            display-name = "LEFT_LAYER";
         };
 
         RIGHT_LAYER {
@@ -255,7 +255,7 @@
                      &none  &none    &none  &none
             >;
 
-            label = "RIGHT_LAYER";
+            display-name = "RIGHT_LAYER";
         };
 
         COMBO_LAYER {
@@ -266,7 +266,7 @@
                      &none  &none    &none  &none
             >;
 
-            label = "COMBO_LAYER";
+            display-name = "COMBO_LAYER";
         };
     };
 };
