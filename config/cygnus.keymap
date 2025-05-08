@@ -1,9 +1,3 @@
-#define BASE_LAYER 0
-#define ALPHA_LAYER 1
-#define LEFT_LAYER 2
-#define RIGHT_LAYER 3
-#define COMBO_LAYER 4
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
@@ -203,7 +197,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        BASE_LAYER {
+        0 {
             bindings = <
         &kp L  &kp W     &kp B                            &kp F          &kp U     &kp O
 &kp A   &atl 2 R  &kp S  &kp T                            &kp N          &kp E  &atr 1 I  &kp G
@@ -214,29 +208,18 @@
             display-name = "BASE_LAYER";
         };
 
-        ALPHA_LAYER_LEFT {
+        1 {
             bindings = <
-        &trans  &kp Y  &trans                    &trans  &trans  &trans
-&trans  &trans  &kp J  &trans                    &trans  &trans  &trans  &trans
-&trans  &trans  &kp V  &trans                    &trans  &trans  &trans  &trans
+        &trans  &kp Y  &trans                    &trans  &kp Z  &trans
+&trans  &trans  &kp J  &trans                    &trans  &kp Q  &trans  &trans
+&trans  &trans  &kp V  &trans                    &trans  &kp X  &trans  &trans
                        &trans  &trans    &trans  &trans
             >;
 
-            display-name = "ALPHA_LAYER_LEFT";
+            display-name = "BETA_LAYER";
         };
 
-        ALPHA_LAYER_RIGHT {
-            bindings = <
-        &trans  &trans  &trans                    &trans  &kp Z  &trans
-&trans  &trans  &trans  &trans                    &trans  &kp Q  &trans  &trans
-&trans  &trans  &trans  &trans                    &trans  &kp X  &trans  &trans
-                        &trans  &trans    &trans  &trans
-            >;
-
-            display-name = "ALPHA_LAYER_RIGHT";
-        };
-
-        LEFT_LAYER {
+        2 {
             bindings = <
        &none  &none  &none                  &none  &none  &none
 &none  &none  &none  &none                  &none  &none  &none  &none
@@ -247,7 +230,7 @@
             display-name = "LEFT_LAYER";
         };
 
-        RIGHT_LAYER {
+        3 {
             bindings = <
        &none  &none  &none                  &none  &none  &none
 &none  &none  &none  &none                  &none  &none  &none  &none
@@ -258,7 +241,7 @@
             display-name = "RIGHT_LAYER";
         };
 
-        COMBO_LAYER {
+        4 {
             bindings = <
        &none  &none  &none                  &none  &none  &none
 &none  &none  &none  &none                  &none  &none  &none  &none
