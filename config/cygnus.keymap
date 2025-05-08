@@ -1,13 +1,11 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-
 #define ALPHA_LAYER 0
 #define BETA_LAYER 1
 #define LEFT_LAYER 2
 #define RIGHT_LAYER 3
 #define COMBO_LAYER 4
-
 #define SFT MOD_LSFT|MOD_RSFT
 
 / {
@@ -19,7 +17,7 @@
             bindings = <&sl 1>;
         };
 
-        atl: alpha_tap_left {
+        tap_q: tap_q {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
@@ -27,10 +25,10 @@
             bindings = <&mo>, <&kp>;
 
             display-name = "Alpha-Tap-Left";
-            hold-trigger-key-positions = <4 11 19 5 12 13 20 18 10 3>;
+            hold-trigger-key-positions = <12 7>;
         };
 
-        atr: alpha_tap_right {
+        tap_j: tap_j {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
@@ -38,7 +36,7 @@
             bindings = <&mo>, <&kp>;
 
             display-name = "Alpha-Tap-Right";
-            hold-trigger-key-positions = <1 8 16 0 2 9 17 15 7 6>;
+            hold-trigger-key-positions = <7 12>;
         };
 
         ht: ht {
@@ -206,10 +204,10 @@
 
         ALPHA_LAYER {
             bindings = <
-        &kp L  &kp W     &kp B                            &kp F          &kp U     &kp O
-&kp A   &atl 2 R  &kp S  &kp T                            &kp N          &kp E  &atr 1 I  &kp G
-&gresc  &kp P  &kp C     &kp D                            &kp H          &kp K     &kp M  &_COM_DOT
-                         &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
+        &kp L       &kp W  &kp B                            &kp F          &kp U  &kp O
+&kp A   &tap_q 1 R  &kp S  &kp T                            &kp N          &kp E  &tap_j 1 I  &kp G
+&gresc  &kp P       &kp C  &kp D                            &kp H          &kp K  &kp M       &_COM_DOT
+                           &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
             >;
 
             display-name = "ALPHA_LAYER";
@@ -217,10 +215,10 @@
 
         BETA_LAYER {
             bindings = <
-        &trans  &kp Y  &trans                    &trans  &kp Z  &trans
-&trans  &trans  &kp J  &trans                    &trans  &kp Q  &trans  &trans
-&trans  &trans  &kp V  &trans                    &trans  &kp X  &trans  &trans
-                       &trans  &trans    &trans  &trans
+        &trans  &kp Y   &trans                    &trans  &kp Z   &trans
+&trans  &kp J   &trans  &trans                    &trans  &trans  &kp Q   &trans
+&trans  &trans  &kp V   &trans                    &trans  &kp X   &trans  &trans
+                        &trans  &trans    &trans  &trans
             >;
 
             display-name = "BETA_LAYER";
