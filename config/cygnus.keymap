@@ -18,14 +18,25 @@
             bindings = <&sl 1>;
         };
 
-        at: alpha_tap {
+        atl: alpha_tap_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <120>;
             bindings = <&mo>, <&kp>;
 
-            display-name = "Alpha-Tap";
+            display-name = "Alpha-Tap-Left";
+            hold-trigger-key-positions = <4 11 19>;
+        };
+
+        atr: alpha_tap_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <120>;
+            bindings = <&mo>, <&kp>;
+
+            display-name = "Alpha-Tap-Right";
             hold-trigger-key-positions = <4 11 19>;
         };
 
