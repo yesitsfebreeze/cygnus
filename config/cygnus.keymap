@@ -17,16 +17,17 @@
             bindings = <&sl 1>;
         };
 
-        tap_q: tap_q {
+        tap_y: tap_y {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <120>;
             bindings = <&mo>, <&kp>;
 
-            display-name = "Alpha-Tap-Left";
+            display-name = "tap_y";
             hold-trigger-key-positions = <12 7>;
-        };
+        }
+        
 
         tap_j: tap_j {
             compatible = "zmk,behavior-hold-tap";
@@ -35,8 +36,52 @@
             tapping-term-ms = <120>;
             bindings = <&mo>, <&kp>;
 
-            display-name = "Alpha-Tap-Right";
+            display-name = "tap_j";
             hold-trigger-key-positions = <7 12>;
+        };
+
+        tap_v: tap_v {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <120>;
+            bindings = <&mo>, <&kp>;
+
+            display-name = "tap_v";
+            hold-trigger-key-positions = <12 7>;
+        }
+
+        tap_z: tap_z {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <120>;
+            bindings = <&mo>, <&kp>;
+
+            display-name = "tap_z;
+            hold-trigger-key-positions = <12 7>;
+        };
+
+        tap_q: tap_q {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <120>;
+            bindings = <&mo>, <&kp>;
+
+            display-name = "tap_q;
+            hold-trigger-key-positions = <12 7>;
+        };
+
+        tap_x: tap_x {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <120>;
+            bindings = <&mo>, <&kp>;
+
+            display-name = "tap_x;
+            hold-trigger-key-positions = <12 7>;
         };
 
         ht: ht {
