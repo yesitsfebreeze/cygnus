@@ -25,9 +25,8 @@
             bindings = <&mo>, <&kp>;
 
             display-name = "tap_y";
-            hold-trigger-key-positions = <12 7>;
-        }
-        
+            hold-trigger-key-positions = <1>;
+        };
 
         tap_j: tap_j {
             compatible = "zmk,behavior-hold-tap";
@@ -37,7 +36,7 @@
             bindings = <&mo>, <&kp>;
 
             display-name = "tap_j";
-            hold-trigger-key-positions = <7 12>;
+            hold-trigger-key-positions = <7>;
         };
 
         tap_v: tap_v {
@@ -48,8 +47,8 @@
             bindings = <&mo>, <&kp>;
 
             display-name = "tap_v";
-            hold-trigger-key-positions = <12 7>;
-        }
+            hold-trigger-key-positions = <16>;
+        };
 
         tap_z: tap_z {
             compatible = "zmk,behavior-hold-tap";
@@ -59,7 +58,8 @@
             bindings = <&mo>, <&kp>;
 
             display-name = "tap_z;
-            hold-trigger-key-positions = <12 7>;
+
+            hold-trigger-key-positions = <4>;
         };
 
         tap_q: tap_q {
@@ -70,7 +70,8 @@
             bindings = <&mo>, <&kp>;
 
             display-name = "tap_q;
-            hold-trigger-key-positions = <12 7>;
+
+            hold-trigger-key-positions = <12>;
         };
 
         tap_x: tap_x {
@@ -81,7 +82,8 @@
             bindings = <&mo>, <&kp>;
 
             display-name = "tap_x;
-            hold-trigger-key-positions = <12 7>;
+
+            hold-trigger-key-positions = <19>;
         };
 
         ht: ht {
@@ -249,10 +251,10 @@
 
         ALPHA_LAYER {
             bindings = <
-        &kp L       &kp W  &kp B                            &kp F          &kp U  &kp O
-&kp A   &tap_q 1 R  &kp S  &kp T                            &kp N          &kp E  &tap_j 1 I  &kp G
-&gresc  &kp P       &kp C  &kp D                            &kp H          &kp K  &kp M       &_COM_DOT
-                           &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
+        &kp L       &tap_z 1 Z  &kp B                            &kp F          &tap_y 1 U  &kp O
+&kp A   &tap_q 1 R  &kp S       &kp T                            &kp N          &kp E       &tap_j 1 I  &kp G
+&gresc  &kp P       &tap_x 1 C  &kp D                            &kp H          &tap_v 1 K  &kp M       &_COM_DOT
+                                &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE
             >;
 
             display-name = "ALPHA_LAYER";
