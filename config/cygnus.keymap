@@ -186,10 +186,10 @@
 
         BETA_LAYER {
             bindings = <
-        &trans  &kp Y   &trans            &trans  &kp Z   &trans
-&trans  &trans  &trans  &kp J             &kp Q   &trans  &trans  &trans
-&trans  &trans  &kp V   &trans            &trans  &kp X   &trans  &trans
-                        &trans  &trans    &trans  &trans
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+              &none  &none  &none  &none  &none  &none
             >;
 
             display-name = "BETA_LAYER";
@@ -197,10 +197,10 @@
 
         LEFT_LAYER {
             bindings = <
-       &none  &none  &none                  &none  &none  &none
-&none  &none  &none  &none                  &none  &none  &none  &none
-&none  &none  &none  &none                  &none  &none  &none  &none
-                     &none  &none    &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+              &none  &none  &none  &none  &none  &none
             >;
 
             display-name = "LEFT_LAYER";
@@ -208,10 +208,10 @@
 
         RIGHT_LAYER {
             bindings = <
-       &none  &none  &none                  &none  &none  &none
-&none  &none  &none  &none                  &none  &none  &none  &none
-&none  &none  &none  &none                  &none  &none  &none  &none
-                     &none  &none    &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+              &none  &none  &none  &none  &none  &none
             >;
 
             display-name = "RIGHT_LAYER";
@@ -219,10 +219,10 @@
 
         COMBO_LAYER {
             bindings = <
-       &none  &none  &none                  &none  &none  &none
-&none  &none  &none  &none                  &none  &none  &none  &none
-&none  &none  &none  &none                  &none  &none  &none  &none
-                     &none  &none    &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+              &none  &none  &none  &none  &none  &none
             >;
 
             display-name = "COMBO_LAYER";
