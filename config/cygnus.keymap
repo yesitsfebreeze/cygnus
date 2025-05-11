@@ -175,10 +175,10 @@
 
         ALPHA_LAYER {
             bindings = <
-&gresc  &kp L  &kp W  &kp B  &kp Y          &kp Z      &kp Q          &kp U  &kp O  &beta 1 G
-&kp A   &kp R  &kp S  &kp T  &kp G          &kp F      &kp N          &kp E  &kp I  &beta 1 G
-&gresc  &kp P  &kp C  &kp D  &kp V          &kp X      &kp H          &kp K  &kp M  &_COM_DOT
-               &kp TAB  &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE &kp TAB
+&gresc  &kp L  &kp W  &kp B    &kp Y      &kp Z      &kp Q          &kp U  &kp O  &beta 1 G
+&kp A   &kp R  &kp S  &kp T    &kp G      &kp F      &kp N          &kp E  &kp I  &beta 1 G
+&gresc  &kp P  &kp C  &kp D    &kp V      &kp X      &kp H          &kp K  &kp M  &_COM_DOT
+               &none  &kp TAB  &kp SPACE  &kp ENTER  &kp BACKSPACE &none
             >;
 
             display-name = "ALPHA_LAYER";
