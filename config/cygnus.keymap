@@ -16,6 +16,7 @@
             flavor = "hold-preferred";
             tapping-term-ms = <120>;
             bindings = <&mo>, <&kp>;
+
             display-name = "beta";
         };
 
@@ -23,6 +24,7 @@
             compatible = "zmk,behavior-hold-tap";
             display-name = "HT";
             bindings = <&kp>, <&kp>;
+
             quick-tap-ms = <180>;
             #binding-cells = <2>;
             tapping-term-ms = <180>;
@@ -165,9 +167,6 @@
         };
     };
 
-    macros {
-    };
-
     combos { compatible = "zmk,combos"; };
 
     keymap {
@@ -175,10 +174,10 @@
 
         ALPHA_LAYER {
             bindings = <
-&gresc  &kp L  &kp W  &kp B    &kp Y      &kp Z      &kp Q          &kp U  &kp O  &beta 1 G
-&kp A   &kp R  &kp S  &kp T    &kp G      &kp F      &kp N          &kp E  &kp I  &beta 1 G
-&gresc  &kp P  &kp C  &kp D    &kp V      &kp X      &kp H          &kp K  &kp M  &_COM_DOT
-               &none  &kp TAB  &kp SPACE  &kp ENTER  &kp BACKSPACE &none
+&gresc          &kp L  &kp W  &kp B    &kp Y        &kp J      &kp Q          &kp U  &kp O  &_EQL
+&kp A           &kp R  &kp S  &kp T    &kp G        &kp F      &kp N          &kp E  &kp I  &kp H
+&kp LEFT_SHIFT  &kp P  &kp C  &kp D    &kp V        &kp X      &kp K          &kp Z  &kp M  &_COM_DOT
+                       &none  &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE  &none
             >;
 
             display-name = "ALPHA_LAYER";
@@ -186,10 +185,10 @@
 
         BETA_LAYER {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-              &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+              &none  &none  &none    &none  &none  &none
             >;
 
             display-name = "BETA_LAYER";
@@ -197,10 +196,10 @@
 
         LEFT_LAYER {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-              &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+              &none  &none  &none    &none  &none  &none
             >;
 
             display-name = "LEFT_LAYER";
@@ -208,10 +207,10 @@
 
         RIGHT_LAYER {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-              &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+              &none  &none  &none    &none  &none  &none
             >;
 
             display-name = "RIGHT_LAYER";
@@ -219,10 +218,10 @@
 
         COMBO_LAYER {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-              &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+              &none  &none  &none    &none  &none  &none
             >;
 
             display-name = "COMBO_LAYER";
