@@ -1,4 +1,0 @@
-name: zmk-keyboard-cygnus
-build:
-  settings:
-    board_root: .
