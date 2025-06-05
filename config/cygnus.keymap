@@ -185,10 +185,10 @@
 
         BETA_LAYER {
             bindings = <
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-              &none  &none  &none    &none  &none  &none
+&trans  &kp HOME        &kp UP    &kp END          &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &none  &none          &none             &none
+&none   &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &none  &kp SEMICOLON  &kp SINGLE_QUOTE  &none
+&trans  &none           &none     &none            &none                   &none                  &none  &none          &none             &none
+                        &none     &none            &none                   &none                  &none  &none
             >;
 
             display-name = "BETA_LAYER";
