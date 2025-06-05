@@ -1,11 +1,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#define ALPHA_LAYER 0
-#define BETA_LAYER 1
-#define LEFT_LAYER 2
-#define RIGHT_LAYER 3
-#define COMBO_LAYER 4
+#define BASE_LAYER 0
+#define LEFT_LAYER 1
+#define RIGHT_LAYER 2
+#define COMBO_LAYER 3
 #define SFT MOD_LSFT|MOD_RSFT
 
 / {
@@ -172,7 +171,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        ALPHA_LAYER {
+        BASE_LAYER {
             bindings = <
 &gresc          &kp L  &kp W  &kp B    &kp Y        &kp J      &kp P          &kp U  &kp O  &_EQL
 &kp A           &kp R  &kp S  &kp T    &kp G        &kp M      &kp N          &kp E  &kp I  &kp F
@@ -180,26 +179,15 @@
                        &none  &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE  &none
             >;
 
-            display-name = "ALPHA_LAYER";
+            display-name = "BASE_LAYER";
         };
 
-        BETA_LAYER {
+        LEFT_LAYER {
             bindings = <
 &trans  &kp HOME        &kp UP    &kp END          &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &none  &none          &none             &none
 &none   &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &none  &kp SEMICOLON  &kp SINGLE_QUOTE  &none
 &trans  &none           &none     &none            &none                   &none                  &none  &none          &none             &none
                         &none     &none            &none                   &none                  &none  &none
-            >;
-
-            display-name = "BETA_LAYER";
-        };
-
-        LEFT_LAYER {
-            bindings = <
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-              &none  &none  &none    &none  &none  &none
             >;
 
             display-name = "LEFT_LAYER";
