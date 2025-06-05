@@ -196,8 +196,8 @@
         BASE_LAYER {
             bindings = <
 &gresc          &kp L  &kp W      &kp B          &kp Y          &kp J        &kp F          &kp U   &kp O  &_COM_DOT
-&kp A           &kp R  &kp S      &kp T          &kp G          &kp M        &kp N          &kp E   &kp I  &kp D
-&kp LEFT_SHIFT  &kp Q  &kp C      &kp P          &kp V          &kp X        &kp H          &kp K   &kp Z  &_EQL
+&kp A           &kp R  &kp S      &kp T          &kp G          &kp M        &kp N          &kp E   &kp I  &kp P
+&kp LEFT_SHIFT  &kp Q  &kp C      &kp D          &kp V          &kp X        &kp H          &kp K   &kp Z  &_EQL
                        &_MNS_PLS  &ht LCTRL TAB  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &_UNDS
             >;
 
