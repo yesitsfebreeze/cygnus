@@ -191,10 +191,10 @@
 
         BASE_LAYER {
             bindings = <
-&gresc          &kp L  &kp W  &kp B          &kp Y        &kp J      &kp P          &kp U    &kp O  &_EQL
-&kp A           &kp R  &kp S  &kp T          &kp G        &kp M      &kp N          &kp E    &kp I  &kp F
-&kp LEFT_SHIFT  &kp P  &kp C  &kp D          &kp V        &kp X      &kp H          &kp K    &kp Z  &_COM_DOT
-                       &none  &ht LCTRL TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE  &_SLASH
+&gresc          &kp L  &kp W  &kp B          &kp Y          &kp J        &kp P          &kp U    &kp O  &_EQL
+&kp A           &kp R  &kp S  &kp T          &kp G          &kp M        &kp N          &kp E    &kp I  &kp F
+&kp LEFT_SHIFT  &kp P  &kp C  &kp D          &kp V          &kp X        &kp H          &kp K    &kp Z  &_COM_DOT
+                       &none  &ht LCTRL TAB  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &_SLASH
             >;
 
             display-name = "BASE_LAYER";
@@ -205,7 +205,7 @@
 &trans  &_HOME          &kp UP    &_END            &_LBRKT    &_RBRKT  &none  &none  &none   &none
 &none   &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &_LPRN     &_RPRN   &none  &_COL  &_QUOT  &none
 &trans  &none           &none     &none            &none      &none    &none  &none  &none   &none
-                        &none     &none            &none      &none    &none  &none
+                        &none     &none            &none      &mo 3    &none  &none
             >;
 
             display-name = "LEFT_LAYER";
@@ -216,7 +216,7 @@
 &none   &kp N1  &kp N2  &kp N3    &none    &none  &none  &none  &none  &none
 &kp N0  &kp N4  &kp N5  &kp N6    &none    &none  &none  &none  &none  &none
 &none   &kp N7  &kp N8  &_N9_TLD  &none    &none  &none  &none  &none  &none
-                &none   &none     &none    &none  &none  &none
+                &none   &none     &mo 3    &none  &none  &none
             >;
 
             display-name = "RIGHT_LAYER";
