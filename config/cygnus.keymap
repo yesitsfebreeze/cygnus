@@ -147,6 +147,25 @@
             mods = <(SFT)>;
         };
 
+        _HOME: _HOME {
+            compatible = "zmk,behavior-mod-morph";
+            display-name = "_HOME";
+            bindings = <&kp HOME>, <&kp PG_UP>;
+
+            #binding-cells = <0>;
+            mods = <(SFT)>;
+        };
+
+        _END: _END {
+            compatible = "zmk,behavior-mod-morph";
+            display-name = "_END";
+            bindings = <&kp END>, <&kp PG_DN>;
+
+            #binding-cells = <0>;
+            mods = <(SFT)>;
+        };
+
+
         _N9_TLD: _N9_TLD {
             compatible = "zmk,behavior-mod-morph";
             display-name = "_N9_TLD";
