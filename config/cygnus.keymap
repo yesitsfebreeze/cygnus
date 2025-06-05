@@ -174,10 +174,10 @@
 
         ALPHA_LAYER {
             bindings = <
-&gresc          &kp L  &kp W  &kp B    &kp Y        &kp J      &kp P          &kp U  &kp O  &_EQL
-&kp A           &kp R  &kp S  &kp T    &kp G        &kp M      &kp N          &kp E  &kp I  &kp F
-&kp LEFT_SHIFT  &kp P  &kp C  &kp D    &kp V        &kp X      &kp H          &kp K  &kp Z  &_COM_DOT
-                       &none  &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE  &none
+&gresc          &kp L  &kp W  &kp B          &kp Y        &kp J      &kp P          &kp U  &kp O  &_EQL
+&kp A           &kp R  &kp S  &kp T          &kp G        &kp M      &kp N          &kp E  &kp I  &kp F
+&kp LEFT_SHIFT  &kp P  &kp C  &kp D          &kp V        &kp X      &kp H          &kp K  &kp Z  &_COM_DOT
+                       &none  &ht LCTRL TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE  &none
             >;
 
             display-name = "ALPHA_LAYER";
@@ -185,10 +185,10 @@
 
         BETA_LAYER {
             bindings = <
-&trans  &kp HOME        &kp UP    &kp END          &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &none  &none          &none             &none
-&none   &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &none  &kp SEMICOLON  &kp SINGLE_QUOTE  &none
-&trans  &none           &none     &none            &none                   &none                  &none  &none          &none             &none
-                        &none     &none            &none                   &none                  &none  &none
+&trans  &kp HOME        &kp UP    &kp END          &_LBRKT    &_RBRKT  &none  &none  &none   &none
+&none   &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &_LPRN     &_RPRN   &none  &_COL  &_QUOT  &none
+&trans  &none           &none     &none            &none      &none    &none  &none  &none   &none
+                        &none     &none            &none      &none    &none  &none
             >;
 
             display-name = "BETA_LAYER";
@@ -196,10 +196,10 @@
 
         LEFT_LAYER {
             bindings = <
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-              &none  &none  &none    &none  &none  &none
+&none   &kp N1  &kp N2  &kp N3    &none    &none  &none  &none  &none  &none
+&kp N0  &kp N4  &kp N5  &kp N6    &none    &none  &none  &none  &none  &none
+&none   &kp N7  &kp N8  &_N9_TLD  &none    &none  &none  &none  &none  &none
+                &none   &none     &none    &none  &none  &none
             >;
 
             display-name = "LEFT_LAYER";
