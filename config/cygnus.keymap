@@ -191,10 +191,10 @@
 
         BASE_LAYER {
             bindings = <
-&gresc          &kp L  &kp W  &kp B          &kp Y        &kp J      &kp P          &kp U  &kp O  &_EQL
-&kp A           &kp R  &kp S  &kp T          &kp G        &kp M      &kp N          &kp E  &kp I  &kp F
-&kp LEFT_SHIFT  &kp P  &kp C  &kp D          &kp V        &kp X      &kp H          &kp K  &kp Z  &_COM_DOT
-                       &none  &ht LCTRL TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE  &none
+&gresc          &kp L  &kp W  &kp B          &kp Y        &kp J      &kp P          &kp U    &kp O  &_EQL
+&kp A           &kp R  &kp S  &kp T          &kp G        &kp M      &kp N          &kp E    &kp I  &kp F
+&kp LEFT_SHIFT  &kp P  &kp C  &kp D          &kp V        &kp X      &kp H          &kp K    &kp Z  &_COM_DOT
+                       &none  &ht LCTRL TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE  &_SLASH
             >;
 
             display-name = "BASE_LAYER";
