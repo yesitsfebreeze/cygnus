@@ -230,7 +230,7 @@
             bindings = <
 &none  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &none    &none  &kp F1  &kp F2  &kp F3  &kp F12
 &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none    &none  &kp F4  &kp F5  &kp F6  &kp F11
-&none  &msc SCRL_DOWN  &mkp MB8        &msc SCRL_UP     &none    &none  &kp F7  &kp F8  &kp F9  &kp F10
+&none  &msc SCRL_DOWN  &mkp MB3        &msc SCRL_UP     &none    &none  &kp F7  &kp F8  &kp F9  &kp F10
                        &none           &none            &none    &none  &none   &none
             >;
 
