@@ -199,7 +199,14 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        combo {
+            bindings = <&mo 3>;
+            key-positions = <32 33>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -217,10 +224,10 @@
 
         LEFT_LAYER {
             bindings = <
-&trans  &_HOME          &kp UP    &_END            &_LBRKT    &_RBRKT  &none  &none  &none   &none
-&none   &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &_LPRN     &_RPRN   &none  &_COL  &_QUOT  &none
-&trans  &none           &none     &none            &none      &none    &none  &none  &none   &none
-                        &none     &none            &none      &mo 3    &none  &none
+&trans          &_HOME          &kp UP    &_END            &_LBRKT    &_RBRKT  &none  &none  &none   &none
+&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &_LPRN     &_RPRN   &none  &_COL  &_QUOT  &kp LEFT_SHIFT
+&trans          &none           &none     &none            &none      &none    &none  &none  &none   &none
+                                &none     &none            &none      &mo 3    &none  &none
             >;
 
             display-name = "LEFT_LAYER";
