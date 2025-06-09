@@ -228,10 +228,10 @@
 
         RIGHT_LAYER {
             bindings = <
-&none   &kp N1  &kp N2  &kp N3    &none    &_EQL      &kp N1  &kp N2  &kp N3    &kp KP_NUMBER_0
-&kp N0  &kp N4  &kp N5  &kp N6    &none    &_MNS_PLS  &kp N4  &kp N5  &kp N6    &_SLASH
-&none   &kp N7  &kp N8  &_N9_TLD  &none    &none      &kp N7  &kp N8  &_N9_TLD  &none
-                &none   &none     &mo 3    &none      &none   &none
+&trans          &kp F1  &kp F2  &kp F3  &kp F10    &_EQL      &kp N1  &kp N2  &kp N3    &kp KP_NUMBER_0
+&kp LEFT_SHIFT  &kp F4  &kp F5  &kp F6  &kp F11    &_MNS_PLS  &kp N4  &kp N5  &kp N6    &_SLASH
+&none           &kp F7  &kp F8  &kp F9  &kp F12    &none      &kp N7  &kp N8  &_N9_TLD  &none
+                        &none   &none   &mo 3      &none      &none   &none
             >;
 
             display-name = "RIGHT_LAYER";
