@@ -213,8 +213,8 @@
 
         BASE_LAYER {
             bindings = <
-&gresc              &kp L          &kp W             &kp B          &kp Y          &kp J        &kp F      &kp U   &kp O  &_EQL
-&_HRM LEFT_SHIFT A  &_HRM LCTRL R  &_HRM LEFT_ALT S  &_HRM LMETA T  &kp G          &kp M        &kp N      &kp E   &kp I  &kp P
+&gresc              &kp L          &kp W             &kp B          &kp P          &kp J        &kp F      &kp U   &kp O  &_EQL
+&_HRM LEFT_SHIFT A  &_HRM LCTRL R  &_HRM LEFT_ALT S  &_HRM LMETA T  &kp G          &kp M        &kp N      &kp E   &kp I  &kp Y
 &_COM_DOT           &kp Q          &kp C             &kp D          &kp V          &kp X        &kp H      &kp K   &kp Z  &_UNDS
                                    &bt BT_CLR_ALL    &ht LCTRL TAB  &lt 1 SPACE    &lt 2 ENTER  &_BSP_DEL  &_UNDS
             >;
@@ -224,9 +224,9 @@
 
         LEFT_LAYER {
             bindings = <
-&trans          &_HOME          &kp UP    &_END            &_LBRKT    &_RBRKT  &none  &none  &none   &none
+&trans          &kp HOME        &kp UP    &kp END          &_LBRKT    &_RBRKT  &none  &none  &none   &none
 &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &_LPRN     &_RPRN   &none  &_COL  &_QUOT  &kp LEFT_SHIFT
-&trans          &none           &none     &none            &none      &none    &none  &none  &none   &none
+&trans          &kp PAGE_UP     &none     &kp PAGE_DOWN    &none      &none    &none  &none  &none   &none
                                 &none     &none            &none      &mo 3    &none  &none
             >;
 
@@ -246,10 +246,10 @@
 
         COMBO_LAYER {
             bindings = <
-&none  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &none    &none  &kp F1  &kp F2  &kp F3  &kp F12
-&none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none    &none  &kp F4  &kp F5  &kp F6  &kp F11
-&none  &msc SCRL_DOWN  &mkp MB3        &msc SCRL_UP     &none    &none  &kp F7  &kp F8  &kp F9  &kp F10
-                       &none           &none            &none    &none  &none   &none
+&none           &mkp MB1        &mmv MOVE_UP    &mkp MB2         &none    &none  &kp F1  &kp F2  &kp F3  &kp F12
+&kp LEFT_SHIFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none    &none  &kp F4  &kp F5  &kp F6  &kp F11
+&none           &msc SCRL_DOWN  &mkp MB3        &msc SCRL_UP     &none    &none  &kp F7  &kp F8  &kp F9  &kp F10
+                                &none           &none            &none    &none  &none   &none
             >;
 
             display-name = "COMBO_LAYER";
