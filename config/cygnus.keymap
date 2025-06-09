@@ -3,7 +3,6 @@
 #define RIGHT_LAYER 2
 #define COMBO_LAYER 3
 #define SFT MOD_LSFT|MOD_RSFT
-
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
@@ -206,10 +205,10 @@
 
         BASE_LAYER {
             bindings = <
-&gresc          &kp L  &kp W      &kp B          &kp Y          &kp J        &kp F          &kp U   &kp O  &_COM_DOT
-&kp A           &kp R  &kp S      &kp T          &kp G          &kp M        &kp N          &kp E   &kp I  &kp P
-&kp LEFT_SHIFT  &kp Q  &kp C      &kp D          &kp V          &kp X        &kp H          &kp K   &kp Z  &_EQL
-                       &_MNS_PLS  &ht LCTRL TAB  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &_UNDS
+&gresc          &kp L  &kp W      &kp B          &kp Y          &kp J        &kp F      &kp U   &kp O  &_COM_DOT
+&kp A           &kp R  &kp S      &kp T          &kp G          &kp M        &kp N      &kp E   &kp I  &kp P
+&kp LEFT_SHIFT  &kp Q  &kp C      &kp D          &kp V          &kp X        &kp H      &kp K   &kp Z  &_EQL
+                       &_MNS_PLS  &ht LCTRL TAB  &lt 1 SPACE    &lt 2 ENTER  &_BSP_DEL  &_UNDS
             >;
 
             display-name = "BASE_LAYER";
@@ -228,10 +227,10 @@
 
         RIGHT_LAYER {
             bindings = <
-&none   &kp N1  &kp N2  &kp N3    &none    &none  &kp N1  &kp N2  &kp N3    &kp KP_NUMBER_0
-&kp N0  &kp N4  &kp N5  &kp N6    &none    &none  &kp N4  &kp N5  &kp N6    &_SLASH
-&none   &kp N7  &kp N8  &_N9_TLD  &none    &none  &kp N7  &kp N8  &_N9_TLD  &none
-                &none   &none     &mo 3    &none  &none   &none
+&none   &kp N1  &kp N2  &kp N3    &none    &_EQL      &kp N1  &kp N2  &kp N3    &kp KP_NUMBER_0
+&kp N0  &kp N4  &kp N5  &kp N6    &none    &_MNS_PLS  &kp N4  &kp N5  &kp N6    &_SLASH
+&none   &kp N7  &kp N8  &_N9_TLD  &none    &none      &kp N7  &kp N8  &_N9_TLD  &none
+                &none   &none     &mo 3    &none      &none   &none
             >;
 
             display-name = "RIGHT_LAYER";
