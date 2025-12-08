@@ -2,16 +2,18 @@
 // https://github.com/manna-harbour/miryoku
 // Miryoku layout adapted for Cygnus
 
-#include <behaviors.dtsi>
 #include <behaviors/mouse_keys.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define U_TAPPING_TERM 200
 
 // Layer definitions
+
 #define U_BASE   0
 #define U_EXTRA  1
 #define U_TAP    2
@@ -32,7 +34,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        
+
         u_lt: u_lt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -46,112 +48,131 @@
         compatible = "zmk,keymap";
 
         // Base layer (Colemak-DH)
+
         base_layer {
             display-name = "Base";
             bindings = <
-&kp W             &kp F             &kp P             &kp B                         &kp J             &kp L             &kp U             &kp Y            
-&kp Q &u_mt LGUI A &u_mt LALT R &u_mt LCTRL S &u_mt LSHFT T &kp G             &kp M &u_mt LSHFT N &u_mt LCTRL E &u_mt LALT I &u_mt LGUI O &kp SQT
-    &u_lt U_BUTTON Z &u_mt RALT X &kp C             &kp D             &kp V             &kp K             &kp H             &kp COMMA         &u_mt RALT DOT &u_lt U_BUTTON SLASH
-                        &u_lt U_MEDIA ESC &u_lt U_NAV SPACE &u_lt U_MOUSE TAB &u_lt U_SYM RET &u_lt U_NUM BSPC &u_lt U_FUN DEL
+&kp W             &kp F          &kp P              &kp B              &kp J                &kp L            &kp U             &kp Y            &kp Q           &u_mt LGUI A
+&u_mt LALT R      &u_mt LCTRL S  &u_mt LSHFT T      &kp G              &kp M                &u_mt LSHFT N    &u_mt LCTRL E     &u_mt LALT I     &u_mt LGUI O    &kp SQT
+&u_lt U_BUTTON Z  &u_mt RALT X   &kp C              &kp D              &kp V                &kp K            &kp H             &kp COMMA        &u_mt RALT DOT  &u_lt U_BUTTON SLASH
+                                 &u_lt U_MEDIA ESC  &u_lt U_NAV SPACE  &u_lt U_MOUSE TAB    &u_lt U_SYM RET  &u_lt U_NUM BSPC  &u_lt U_FUN DEL
             >;
         };
 
         // Extra layer (QWERTY)
+
         extra_layer {
             display-name = "Extra";
             bindings = <
-&kp W             &kp E             &kp R             &kp T                         &kp Y             &kp U             &kp I             &kp O            
-&kp Q &u_mt LGUI A &u_mt LALT S &u_mt LCTRL D &u_mt LSHFT F &kp G             &kp H &u_mt LSHFT J &u_mt LCTRL K &u_mt LALT L &u_mt LGUI SQT &kp P
-    &u_lt U_BUTTON Z &u_mt RALT X &kp C             &kp V             &kp B             &kp N             &kp M             &kp COMMA         &u_mt RALT DOT &u_lt U_BUTTON SLASH
-                        &u_lt U_MEDIA ESC &u_lt U_NAV SPACE &u_lt U_MOUSE TAB &u_lt U_SYM RET &u_lt U_NUM BSPC &u_lt U_FUN DEL
+&kp W             &kp E          &kp R              &kp T              &kp Y                &kp U            &kp I             &kp O            &kp Q           &u_mt LGUI A
+&u_mt LALT S      &u_mt LCTRL D  &u_mt LSHFT F      &kp G              &kp H                &u_mt LSHFT J    &u_mt LCTRL K     &u_mt LALT L     &u_mt LGUI SQT  &kp P
+&u_lt U_BUTTON Z  &u_mt RALT X   &kp C              &kp V              &kp B                &kp N            &kp M             &kp COMMA        &u_mt RALT DOT  &u_lt U_BUTTON SLASH
+                                 &u_lt U_MEDIA ESC  &u_lt U_NAV SPACE  &u_lt U_MOUSE TAB    &u_lt U_SYM RET  &u_lt U_NUM BSPC  &u_lt U_FUN DEL
             >;
         };
 
         // Tap layer (Colemak-DH without mods)
+
         tap_layer {
             display-name = "Tap";
             bindings = <
-&kp W             &kp F             &kp P             &kp B                         &kp J             &kp L             &kp U             &kp Y            
-&kp Q &kp A             &kp R             &kp S             &kp T             &kp G             &kp M &kp N             &kp E             &kp I             &kp O             &kp SQT
-    &kp Z             &kp X             &kp C             &kp D             &kp V             &kp K             &kp H             &kp COMMA         &kp DOT           &kp SLASH
-                        &kp ESC           &kp SPACE         &kp TAB           &kp RET           &kp BSPC          &kp DEL
+&kp W  &kp F  &kp P    &kp B      &kp J      &kp L    &kp U     &kp Y      &kp Q    &kp A
+&kp R  &kp S  &kp T    &kp G      &kp M      &kp N    &kp E     &kp I      &kp O    &kp SQT
+&kp Z  &kp X  &kp C    &kp D      &kp V      &kp K    &kp H     &kp COMMA  &kp DOT  &kp SLASH
+              &kp ESC  &kp SPACE  &kp TAB    &kp RET  &kp BSPC  &kp DEL
             >;
         };
 
         // Button layer
+
         button_layer {
             display-name = "Button";
             bindings = <
-&kp K_CUT         &kp K_COPY        &kp K_PASTE       &kp K_AGAIN                   &kp K_AGAIN       &kp K_PASTE       &kp K_COPY        &kp K_CUT        
-&kp K_UNDO &kp LGUI          &kp LALT          &kp LCTRL         &kp LSHFT         &none             &none &kp LSHFT         &kp LCTRL         &kp LALT          &kp LGUI          &kp K_UNDO
-    &kp K_UNDO        &kp K_CUT         &kp K_COPY        &kp K_PASTE       &kp K_AGAIN       &kp K_AGAIN       &kp K_PASTE       &kp K_COPY        &kp K_CUT         &kp K_UNDO
-                        &mkp MB3          &mkp MB1          &mkp MB2          &mkp MB2          &mkp MB1          &mkp MB3
+&kp K_CUT   &kp K_COPY  &kp K_PASTE  &kp K_AGAIN  &kp K_AGAIN    &kp K_PASTE  &kp K_COPY   &kp K_CUT   &kp K_UNDO  &kp LGUI
+&kp LALT    &kp LCTRL   &kp LSHFT    &none        &none          &kp LSHFT    &kp LCTRL    &kp LALT    &kp LGUI    &kp K_UNDO
+&kp K_UNDO  &kp K_CUT   &kp K_COPY   &kp K_PASTE  &kp K_AGAIN    &kp K_AGAIN  &kp K_PASTE  &kp K_COPY  &kp K_CUT   &kp K_UNDO
+                        &mkp MB3     &mkp MB1     &mkp MB2       &mkp MB2     &mkp MB1     &mkp MB3
             >;
         };
 
         // Nav layer
+
         nav_layer {
             display-name = "Nav";
             bindings = <
-&to U_TAP         &to U_EXTRA       &to U_BASE        &bootloader                   &kp K_AGAIN       &kp K_PASTE       &kp K_COPY        &kp K_CUT        
-&bootloader &kp LGUI          &kp LALT          &kp LCTRL         &kp LSHFT         &none             &caps_word &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT         &kp K_UNDO
-    &none             &kp RALT          &to U_NUM         &to U_NAV         &none             &kp INS           &kp HOME          &kp PG_DN         &kp PG_UP         &kp END
-                        &none             &none             &none             &kp RET           &kp BSPC          &kp DEL
+&to U_TAP  &to U_EXTRA  &to U_BASE  &bootloader  &kp K_AGAIN    &kp K_PASTE  &kp K_COPY  &kp K_CUT  &bootloader  &kp LGUI
+&kp LALT   &kp LCTRL    &kp LSHFT   &none        &caps_word     &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT    &kp K_UNDO
+&none      &kp RALT     &to U_NUM   &to U_NAV    &none          &kp INS      &kp HOME    &kp PG_DN  &kp PG_UP    &kp END
+                        &none       &none        &none          &kp RET      &kp BSPC    &kp DEL
             >;
         };
 
         // Mouse layer
+
         mouse_layer {
             display-name = "Mouse";
             bindings = <
-&to U_TAP         &to U_EXTRA       &to U_BASE        &bootloader                   &kp K_AGAIN       &kp K_PASTE       &kp K_COPY        &kp K_CUT        
-&bootloader &kp LGUI          &kp LALT          &kp LCTRL         &kp LSHFT         &none             &none &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_UP      &mmv MOVE_RIGHT   &kp K_UNDO
-    &none             &kp RALT          &to U_SYM         &to U_MOUSE       &none             &none             &msc SCRL_LEFT    &msc SCRL_DOWN    &msc SCRL_UP      &msc SCRL_RIGHT
-                        &none             &none             &none             &mkp MB2          &mkp MB1          &mkp MB3
+&to U_TAP  &to U_EXTRA  &to U_BASE  &bootloader  &kp K_AGAIN    &kp K_PASTE     &kp K_COPY      &kp K_CUT       &bootloader      &kp LGUI
+&kp LALT   &kp LCTRL    &kp LSHFT   &none        &none          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &kp K_UNDO
+&none      &kp RALT     &to U_SYM   &to U_MOUSE  &none          &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP     &msc SCRL_RIGHT
+                        &none       &none        &none          &mkp MB2        &mkp MB1        &mkp MB3
             >;
         };
 
         // Media layer
+
         media_layer {
             display-name = "Media";
             bindings = <
-&to U_TAP         &to U_EXTRA       &to U_BASE        &bootloader                   &none             &none             &none             &none            
-&bootloader &kp LGUI          &kp LALT          &kp LCTRL         &kp LSHFT         &none             &none &kp C_PREV        &kp C_VOL_DN      &kp C_VOL_UP      &kp C_NEXT        &none
-    &none             &kp RALT          &to U_FUN         &to U_MEDIA       &none             &out OUT_TOG      &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3
-                        &none             &none             &none             &kp C_STOP        &kp C_PP          &kp C_MUTE
+&to U_TAP  &to U_EXTRA  &to U_BASE  &bootloader  &none    &none         &none         &none         &bootloader   &kp LGUI
+&kp LALT   &kp LCTRL    &kp LSHFT   &none        &none    &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT    &none
+&none      &kp RALT     &to U_FUN   &to U_MEDIA  &none    &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
+                        &none       &none        &none    &kp C_STOP    &kp C_PP      &kp C_MUTE
             >;
         };
 
         // Num layer
+
         num_layer {
             display-name = "Num";
             bindings = <
-&kp N7            &kp N8            &kp N9            &kp RBKT                      &none             &to U_BASE        &to U_EXTRA       &to U_TAP        
-&kp LBKT &kp SEMI          &kp N4            &kp N5            &kp N6            &kp EQUAL         &none &kp LSHFT         &kp LCTRL         &kp LALT          &kp LGUI          &bootloader
-    &kp GRAVE         &kp N1            &kp N2            &kp N3            &kp BSLH          &none             &to U_NUM         &to U_NAV         &kp RALT          &none
-                        &kp DOT           &kp N0            &kp MINUS         &none             &none             &none
+&kp N7     &kp N8  &kp N9   &kp RBKT   &none        &to U_BASE  &to U_EXTRA  &to U_TAP  &kp LBKT  &kp SEMI
+&kp N4     &kp N5  &kp N6   &kp EQUAL  &none        &kp LSHFT   &kp LCTRL    &kp LALT   &kp LGUI  &bootloader
+&kp GRAVE  &kp N1  &kp N2   &kp N3     &kp BSLH     &none       &to U_NUM    &to U_NAV  &kp RALT  &none
+                   &kp DOT  &kp N0     &kp MINUS    &none       &none        &none
             >;
         };
 
         // Sym layer
+
         sym_layer {
             display-name = "Sym";
             bindings = <
-&kp AMPS          &kp ASTRK         &kp LPAR          &kp RBRC                      &none             &to U_BASE        &to U_EXTRA       &to U_TAP        
-&kp LBRC &kp COLON         &kp DLLR          &kp PRCNT         &kp CARET         &kp PLUS          &none &kp LSHFT         &kp LCTRL         &kp LALT          &kp LGUI          &bootloader
-    &kp TILDE         &kp EXCL          &kp AT            &kp HASH          &kp PIPE          &none             &to U_SYM         &to U_MOUSE       &kp RALT          &none
-                        &kp LPAR          &kp RPAR          &kp UNDER         &none             &none             &none
+&kp AMPS   &kp ASTRK  &kp LPAR   &kp RBRC  &none        &to U_BASE  &to U_EXTRA  &to U_TAP    &kp LBRC  &kp COLON
+&kp DLLR   &kp PRCNT  &kp CARET  &kp PLUS  &none        &kp LSHFT   &kp LCTRL    &kp LALT     &kp LGUI  &bootloader
+&kp TILDE  &kp EXCL   &kp AT     &kp HASH  &kp PIPE     &none       &to U_SYM    &to U_MOUSE  &kp RALT  &none
+                      &kp LPAR   &kp RPAR  &kp UNDER    &none       &none        &none
             >;
         };
 
         // Fun layer
+
         fun_layer {
             display-name = "Fun";
             bindings = <
-&kp F7            &kp F8            &kp F9            &kp PSCRN                     &none             &to U_BASE        &to U_EXTRA       &to U_TAP        
-&kp F12 &kp F11           &kp F4            &kp F5            &kp F6            &kp SLCK          &none &kp LSHFT         &kp LCTRL         &kp LALT          &kp LGUI          &bootloader
-    &kp F10           &kp F1            &kp F2            &kp F3            &kp PAUSE_BREAK   &none             &to U_FUN         &to U_MEDIA       &kp RALT          &none
-                        &kp K_APP         &kp SPACE         &kp TAB           &none             &none             &none
+&kp F7   &kp F8  &kp F9     &kp PSCRN  &none              &to U_BASE  &to U_EXTRA  &to U_TAP    &kp F12   &kp F11
+&kp F4   &kp F5  &kp F6     &kp SLCK   &none              &kp LSHFT   &kp LCTRL    &kp LALT     &kp LGUI  &bootloader
+&kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &none       &to U_FUN    &to U_MEDIA  &kp RALT  &none
+                 &kp K_APP  &kp SPACE  &kp TAB            &none       &none        &none
+            >;
+        };
+
+        layer_10 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
