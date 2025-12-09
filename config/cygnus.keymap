@@ -7,12 +7,11 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define TAPPING_TERM 200
 
 // Mouse settings
+
 #define MOUSE_MOVE_EXPONENT 1
 #define MOUSE_MOVE_TIME 1500
 #define MOUSE_MOVE_DELAY 0
@@ -34,89 +33,92 @@
 #define L10 9
 
 // Mouse movement configuration
+
 &mmv {
-	acceleration-exponent = <MOUSE_MOVE_EXPONENT>;
-	time-to-max-speed-ms = <MOUSE_MOVE_TIME>;
-	delay-ms = <MOUSE_MOVE_DELAY>;
+    acceleration-exponent = <MOUSE_MOVE_EXPONENT>;
+    time-to-max-speed-ms = <MOUSE_MOVE_TIME>;
+    delay-ms = <MOUSE_MOVE_DELAY>;
 };
 
 &msc {
-	acceleration-exponent = <MOUSE_SCROLL_EXPONENT>;
-	time-to-max-speed-ms = <MOUSE_SCROLL_TIME>;
-	delay-ms = <MOUSE_SCROLL_DELAY>;
+    acceleration-exponent = <MOUSE_SCROLL_EXPONENT>;
+    time-to-max-speed-ms = <MOUSE_SCROLL_TIME>;
+    delay-ms = <MOUSE_SCROLL_DELAY>;
 };
 
 / {
-	macros {
-		// Bluetooth select with clear on shift
-		u_macro_bt_sel_0: u_macro_bt_sel_0 {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&bt BT_SEL 0 &bt BT_CLR>;
-		};
-		u_macro_bt_sel_1: u_macro_bt_sel_1 {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&bt BT_SEL 1 &bt BT_CLR>;
-		};
-		u_macro_bt_sel_2: u_macro_bt_sel_2 {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&bt BT_SEL 2 &bt BT_CLR>;
-		};
-		u_macro_bt_sel_3: u_macro_bt_sel_3 {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&bt BT_SEL 3 &bt BT_CLR>;
-		};
-	};
+    macros {
+        // Bluetooth select with clear on shift
 
-	behaviors {
-//		mt: mt {
-//			compatible = "zmk,behavior-hold-tap";
-//			#binding-cells = <2>;
-//			tapping-term-ms = <TAPPING_TERM>;
-//			flavor = "tap-preferred";
-//			bindings = <&kp>, <&kp>;
-//		};
+        u_macro_bt_sel_0: u_macro_bt_sel_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&bt BT_SEL 0 &bt BT_CLR>;
+        };
 
-//		lt: lt {
-//			compatible = "zmk,behavior-hold-tap";
-//			#binding-cells = <2>;
-//			tapping-term-ms = <TAPPING_TERM>;
-//			flavor = "tap-preferred";
-//			bindings = <&mo>, <&kp>;
-//		};
+        u_macro_bt_sel_1: u_macro_bt_sel_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&bt BT_SEL 1 &bt BT_CLR>;
+        };
 
-		sp: sp {
-			compatible = "zmk,behavior-mod-morph";
-			#binding-cells = <2>;
-			bindings = <&kp>, <&kp>;
-			mods = <(MOD_LSFT|MOD_RSFT)>;
-		};
-	};
+        u_macro_bt_sel_2: u_macro_bt_sel_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&bt BT_SEL 2 &bt BT_CLR>;
+        };
 
-	keymap {
-		compatible = "zmk,keymap";
+        u_macro_bt_sel_3: u_macro_bt_sel_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&bt BT_SEL 3 &bt BT_CLR>;
+        };
+    };
 
-		base_layer {
-			display-name = "Base";	
-			bindings = <
+    behaviors {
+        //		mt: mt {
+        //			compatible = "zmk,behavior-hold-tap";
+        //			#binding-cells = <2>;
+        //			tapping-term-ms = <TAPPING_TERM>;
+        //			flavor = "tap-preferred";
+        //			bindings = <&kp>, <&kp>;
+        //		};
+        //		lt: lt {
+        //			compatible = "zmk,behavior-hold-tap";
+        //			#binding-cells = <2>;
+        //			tapping-term-ms = <TAPPING_TERM>;
+        //			flavor = "tap-preferred";
+        //			bindings = <&mo>, <&kp>;
+        //		};
 
-&kp ESC   &kp L &kp W     &kp B   &kp Y       &kp J   &kp F    &kp U   &kp O   &sp BSPC DEL
-&kp A     &kp R &kp S     &kp T   &kp G       &kp M   &kp N    &kp E   &kp I   &kp P
-&kp LSHFT &kp Q &kp C     &kp D   &kp V       &kp X   &kp H    &kp K   &kp Z   &kp RSHFT
-                &kp LCTRL &kp TAB &kp SPACE   &kp RET &kp LALT &kp LGUI
-			>;
-		};
+        sp: sp {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
 
-	};
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        base_layer {
+            display-name = "Base";
+            bindings = <
+&kp ESC    &kp L  &kp W      &kp B    &kp Y        &kp J    &kp F     &kp U     &kp O  &sp BSPC DEL
+&kp A      &kp R  &kp S      &kp T    &kp G        &kp M    &kp N     &kp E     &kp I  &kp P
+&kp LSHFT  &kp Q  &kp C      &kp D    &kp V        &kp X    &kp H     &kp K     &kp Z  &kp RSHFT
+                  &kp LCTRL  &kp TAB  &kp SPACE    &kp RET  &kp LALT  &kp LGUI
+            >;
+        };
+    };
 };
