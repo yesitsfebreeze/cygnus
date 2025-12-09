@@ -111,7 +111,7 @@
 			display-name = "Base";	
 			bindings = <
 
-&kp ESC   &kp L &kp W     &kp B   &kp Y     &kp J   &kp F    &kp U   &kp O   &sp BSP DEL
+&kp ESC   &kp L &kp W     &kp B   &kp Y     &kp J   &kp F    &kp U   &kp O   &sp BSPC DEL
 &kp A     &kp R &kp S     &kp T   &kp G     &kp M   &kp N    &kp E   &kp I   &kp P
 &kp LSHFT &kp Q &kp C     &kp D   &kp V     &kp X   &kp H    &kp K   &kp Z   &kp RSHFT
                 &kp LCTRL &kp TAB &kp SPC   &kp RET &kp LALT &kp LGUI
