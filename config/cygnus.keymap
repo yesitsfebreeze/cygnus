@@ -6,17 +6,15 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define TAPPING_TERM 200
-
-
 #define U_MOUSE_MOVE_EXPONENT 1
 #define U_MOUSE_MOVE_TIME 1500
 #define U_MOUSE_MOVE_DELAY 0
 #define U_MOUSE_SCROLL_EXPONENT 1
 #define U_MOUSE_SCROLL_TIME 5000
 #define U_MOUSE_SCROLL_DELAY 0
-
 
 // Layer definitions
 
@@ -213,19 +211,19 @@
 
         COM {
             bindings = <
-&trans  &mkp MB1  &mmv MOVE_UP  &mkp MB2 RCLK  &trans    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2 RCLK    &trans    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
 &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&trans  &msc SCRL_UP  &mkp MB3  &msc SCRL_DOWN  &trans    &kp F11  &kp F12  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &msc SCRL_UP    &mkp MB3        &msc SCRL_DOWN   &trans    &kp F11  &kp F12  &trans  &trans  &trans
+                        &trans          &trans           &trans    &trans   &trans   &trans
             >;
         };
 
-        layer_4 {
+        EXTRA {
             bindings = <
-&trans  &trans      &trans    &trans     &trans        &trans   &trans   &trans  &trans  &trans
-&trans  &trans      &trans    &trans     &trans        &trans   &trans   &trans  &trans  &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)     &trans  &trans  &trans  &trans  &trans
-                    &trans    &trans     &trans        &trans   &trans   &trans
+&trans  &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)    &trans  &trans  &trans  &trans  &trans
+                   &trans     &trans     &trans       &trans  &trans  &trans
             >;
         };
     };
