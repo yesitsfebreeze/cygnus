@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  zmk-build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./bin:/workspace/.tmp
+    container_name: cygnus-zmk-build

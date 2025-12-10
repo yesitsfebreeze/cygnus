@@ -6,4 +6,3 @@ include:
     shield: cygnus_right
   - board: nice_nano
     shield: settings_reset
-    

@@ -1,5 +1,8 @@
 .DS_Store
 
+# Build artifacts
+bin
+
 pcb/*-backups
 pcb/*autosave-*
 pcb/*.lck
