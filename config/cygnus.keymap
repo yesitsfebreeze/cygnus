@@ -16,20 +16,7 @@
 #define U_MOUSE_SCROLL_EXPONENT 1
 #define U_MOUSE_SCROLL_TIME 5000
 #define U_MOUSE_SCROLL_DELAY 0
-#define U_BTN1 &mkp MB1
-#define U_BTN2 &mkp MB2
-#define U_BTN3 &mkp MB3
-#define U_MB_L &mkp LCLK
-#define U_MB_R &mkp RCLK
-#define U_MB_M &mkp MCLK
-#define U_MS_D &mmv MOVE_DOWN
-#define U_MS_L &mmv MOVE_LEFT
-#define U_MS_R &mmv MOVE_RIGHT
-#define U_MS_U &mmv MOVE_UP
-#define U_WH_D &msc SCRL_DOWN
-#define U_WH_L &msc SCRL_LEFT
-#define U_WH_R &msc SCRL_RIGHT
-#define U_WH_U &msc SCRL_UP
+
 
 // Layer definitions
 
@@ -226,9 +213,9 @@
 
         COM {
             bindings = <
-&trans  U_MB_L  U_MS_U  U_MB_R  &trans    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  U_MS_L  U_MS_D  U_MS_R  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  U_MB_M  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &mkp MB1  &mmv MOVE_UP  &mkp MB2 RCLK  &trans    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &msc SCRL_UP  &mkp MB3  &msc SCRL_DOWN  &trans    &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
