@@ -115,7 +115,7 @@
         NOR {
             display-name = "Base";
             bindings = <
-&kp ESC           &kp L  &kp W      &kp B    &kp Y           &kp J       &kp F          &kp U     &kp O  &bspc
+&gresc            &kp L  &kp W      &kp B    &kp Y           &kp J       &kp F          &kp U     &kp O  &bspc
 &mt LEFT_SHIFT A  &kp R  &kp S      &kp T    &kp G           &kp M       &kp N          &kp E     &kp I  &kp P
 &kp LEFT_CONTROL  &kp Q  &kp C      &kp D    &kp V           &kp X       &kp H          &kp K     &kp Z  &kp RSHFT
                          &kp LCTRL  &kp TAB  &lt L1 SPACE    &lt L2 RET  &kp BACKSPACE  &kp LGUI
@@ -124,19 +124,19 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans        &trans        &trans     &trans     &trans    &trans     &trans  &trans
-&trans  &trans  &kp UP_ARROW  &kp RIGHT     &kp END    &kp HOME   &kp LEFT  &kp DOWN   &trans  &trans
-&trans  &trans  &kp PAGE_UP   &trans        &trans     &trans     &trans    &kp PG_DN  &trans  &trans
-                &trans        &kp LEFT_GUI  &trans     &lt 3 RET  &kp DEL   &trans
+&trans          &kp HOME        &kp UP_ARROW  &kp END        &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &trans   &trans     &trans  &trans
+&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp DOT  &kp COMMA  &trans  &trans
+&trans          &kp PAGE_UP     &kp PAGE_UP   &kp PAGE_DOWN  &kp LT                  &kp GT                 &trans   &trans     &trans  &trans
+                                &trans        &kp LEFT_GUI   &trans                  &lt 3 RET              &kp DEL  &trans
             >;
         };
 
         NUM {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &trans         &trans  &trans  &trans  &trans  &trans
-&trans  &kp N4  &kp N5  &kp N6  &trans         &trans  &trans  &trans  &trans  &trans
-&trans  &kp N7  &kp N8  &kp N9  &trans         &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &lt 3 SPACE    &trans  &trans  &trans
+&trans          &kp N1  &kp N2  &kp N3  &kp EQUAL      &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp DOT        &trans  &trans  &trans  &trans  &trans
+&trans          &kp N7  &kp N8  &kp N9  &kp COMMA      &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &lt 3 SPACE    &trans  &trans  &trans
             >;
         };
 
