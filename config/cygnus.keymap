@@ -124,9 +124,9 @@
 
         NAV {
             bindings = <
-&trans          &kp HOME        &kp UP_ARROW  &kp END        &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &trans   &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans   &trans  &trans  &trans
-&trans          &kp PAGE_UP     &kp PAGE_UP   &kp PAGE_DOWN  &kp LT                  &kp GT                 &trans   &trans  &trans  &trans
+&trans          &kp HOME        &kp UP_ARROW  &kp END        &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &trans   &trans     &trans  &trans
+&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp DOT  &kp COMMA  &trans  &trans
+&trans          &kp PAGE_UP     &kp PAGE_UP   &kp PAGE_DOWN  &kp LT                  &kp GT                 &trans   &trans     &trans  &trans
                                 &trans        &kp LEFT_GUI   &trans                  &lt 3 RET              &kp DEL  &trans
             >;
         };
