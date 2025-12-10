@@ -134,6 +134,42 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        lparen: lparen {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LPAREN";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        rparen: rparen {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RPAREN";
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        lbracket: lbracket {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LBRACKET";
+            bindings = <&kp LEFT_BRACKET>, <&kp LESS_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        rbracket: rbracket {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RBRACKET";
+            bindings = <&kp RIGHT_BRACKET>, <&kp GREATER_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -151,10 +187,10 @@
 
         NAV {
             bindings = <
-&trans          &kp HOME        &kp UP_ARROW  &kp END        &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &trans   &trans     &trans  &trans
-&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp DOT  &kp COMMA  &trans  &trans
-&trans          &kp PAGE_UP     &kp PAGE_UP   &kp PAGE_DOWN  &kp LT                  &kp GT                 &trans   &trans     &trans  &trans
-                                &trans        &kp LEFT_GUI   &trans                  &lt 3 RET              &kp DEL  &trans
+&trans          &kp HOME        &kp UP_ARROW  &kp END        &lbracket    &rbracket  &trans   &trans     &trans  &trans
+&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &lparen      &rparen    &kp DOT  &kp COMMA  &trans  &trans
+&trans          &kp PAGE_UP     &kp PAGE_UP   &kp PAGE_DOWN  &trans       &trans     &trans   &trans     &trans  &trans
+                                &trans        &kp LEFT_GUI   &trans       &lt 3 RET  &kp DEL  &trans
             >;
         };
 
