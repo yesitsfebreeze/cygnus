@@ -178,19 +178,19 @@
         NOR {
             display-name = "Base";
             bindings = <
-&gresc            &kp L  &kp W      &kp D    &kp Y           &kp J       &kp H    &kp U     &kp O  &trans
-&mt LEFT_SHIFT A  &kp R  &kp S      &kp T    &kp G           &kp M       &kp N    &kp E     &kp I  &kp P
-&kp LEFT_CONTROL  &kp Z  &kp X      &kp C    &kp V           &kp F       &kp B    &kp K     &kp Q  &kp RSHFT
-                         &kp LCTRL  &kp TAB  &lt L1 SPACE    &lt L2 RET  &kp DEL  &kp LGUI
+&gresc            &kp L  &kp W      &kp D      &kp Y           &kp J       &kp H          &kp U     &kp O  &trans
+&mt LEFT_SHIFT A  &kp R  &kp S      &kp T      &kp G           &kp M       &kp N          &kp E     &kp I  &kp P
+&kp F12           &kp Z  &kp X      &kp C      &kp V           &kp F       &kp B          &kp K     &kp Q  &kp RSHFT
+                         &kp LCTRL  &lt 4 TAB  &lt L1 SPACE    &lt L2 RET  &kp BACKSPACE  &kp LGUI
             >;
         };
 
         NAV {
             bindings = <
-&trans          &kp HOME        &kp UP_ARROW  &kp END        &lbracket    &rbracket  &trans         &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &lparen      &rparen    &dot           &comma  &trans  &trans
-&trans          &kp PAGE_UP     &kp LS(F12)   &kp PAGE_DOWN  &trans       &trans     &trans         &trans  &trans  &trans
-                                &trans        &kp LEFT_GUI   &trans       &lt 3 RET  &kp BACKSPACE  &trans
+&trans          &kp HOME        &kp UP_ARROW  &kp END        &lbracket    &rbracket  &trans   &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &lparen      &rparen    &dot     &comma  &trans  &trans
+&trans          &kp PAGE_UP     &kp C_PP      &kp PAGE_DOWN  &trans       &trans     &trans   &trans  &trans  &trans
+                                &trans        &kp LEFT_GUI   &trans       &lt 3 RET  &kp DEL  &trans
             >;
         };
 
@@ -212,12 +212,12 @@
             >;
         };
 
-        layer_4 {
+        HKS {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans    &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans    &kp F11  &kp F12  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans   &trans   &trans
+&trans  &trans     &trans     &trans     &trans       &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
+&trans  &trans     &trans     &trans     &trans       &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)    &kp F11  &kp F12  &trans  &trans  &trans
+                   &trans     &trans     &trans       &trans   &trans   &trans
             >;
         };
     };
