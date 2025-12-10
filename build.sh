@@ -8,6 +8,9 @@ echo "Building Cygnus firmware with Docker..."
 # Create bin directory if it doesn't exist
 mkdir -p bin
 
+
+git pull
+
 # Build and run the Docker container
 docker-compose up --build
 
