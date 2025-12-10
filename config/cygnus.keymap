@@ -16,15 +16,12 @@
 #define U_MOUSE_SCROLL_EXPONENT 1
 #define U_MOUSE_SCROLL_TIME 5000
 #define U_MOUSE_SCROLL_DELAY 0
-
 #define U_BTN1 &mkp MB1
 #define U_BTN2 &mkp MB2
 #define U_BTN3 &mkp MB3
-
 #define U_MB_L &mkp LCLK
 #define U_MB_R &mkp RCLK
 #define U_MB_M &mkp MCLK
-
 #define U_MS_D &mmv MOVE_DOWN
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
@@ -187,6 +184,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Co {
+            bindings = <&mo 3>;
+            key-positions = <32 33>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -220,19 +226,18 @@
 
         COM {
             bindings = <
-&trans  U_MB_L  U_MS_U  U_MB_R  &trans    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  U_MS_L  U_MS_D  U_MS_R  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  U_MB_M  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans    &trans  &trans  &trans
+&trans U_MB_L U_MS_U U_MB_R  &trans  &kp F1  &kp F2  &kp F3    &kp F4         &kp F5  &trans U_MS_L U_MS_D U_MS_R  &trans  &trans
+&trans                       &trans  &trans  &trans  &trans    &trans U_MB_M  &trans  &trans                       &trans  &trans
+&trans                       &trans  &trans  &trans  &trans    &trans         &trans  &trans                       &trans
             >;
         };
 
         layer_4 {
             bindings = <
-&trans  &trans      &trans    &trans     &trans        &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-&trans  &trans      &trans    &trans     &trans        &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)     &kp F11  &kp F12  &trans  &trans  &trans
-                    &trans    &trans     &trans        &trans   &trans   &trans
+&trans  &trans     &trans     &trans     &trans       &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
+&trans  &trans     &trans     &trans     &trans       &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)    &kp F11  &kp F12  &trans  &trans  &trans
+                   &trans     &trans     &trans       &trans   &trans   &trans
             >;
         };
     };
