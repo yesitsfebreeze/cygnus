@@ -107,6 +107,33 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        slash: slash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLASH";
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        dot: dot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT";
+            bindings = <&kp DOT>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        comma: comma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA";
+            bindings = <&kp COMMA>, <&kp SEMI>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -133,16 +160,25 @@
 
         NUM {
             bindings = <
-&trans          &kp N1  &kp N2  &kp N3  &kp EQUAL      &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp DOT        &trans  &trans  &trans  &trans  &trans
-&trans          &kp N7  &kp N8  &kp N9  &kp COMMA      &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &lt 3 SPACE    &trans  &trans  &trans
+&trans          &kp N1  &kp N2  &kp N3  &kp EQUAL      &trans       &trans     &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0         &trans       &dot       &comma  &trans  &trans
+&trans          &kp N7  &kp N8  &kp N9  &kp SLASH      &kp PERCENT  &kp ASTRK  &slash  &trans  &trans
+                        &trans  &trans  &lt 3 SPACE    &trans       &trans     &trans
             >;
         };
 
         COM {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans    &trans  &trans  &trans
