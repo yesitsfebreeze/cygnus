@@ -6,5 +6,5 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./bin:/workspace/.tmp
+      - ./bin:/workspace/bin
     container_name: cygnus-zmk-build
