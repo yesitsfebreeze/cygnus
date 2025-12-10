@@ -112,7 +112,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
+        NOR {
             display-name = "Base";
             bindings = <
 &kp ESC           &kp L  &kp W      &kp B    &kp Y           &kp J       &kp F          &kp U     &kp O  &bspc
@@ -124,18 +124,27 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans        &trans        &trans     &trans    &trans    &trans     &trans  &trans
-&trans  &trans  &kp UP_ARROW  &kp RIGHT     &kp END    &kp HOME  &kp LEFT  &kp DOWN   &trans  &trans
-&trans  &trans  &kp PAGE_UP   &trans        &trans     &trans    &trans    &kp PG_DN  &trans  &trans
-                &trans        &kp LEFT_GUI  &trans     &trans    &kp DEL   &trans
+&trans  &trans  &trans        &trans        &trans     &trans     &trans    &trans     &trans  &trans
+&trans  &trans  &kp UP_ARROW  &kp RIGHT     &kp END    &kp HOME   &kp LEFT  &kp DOWN   &trans  &trans
+&trans  &trans  &kp PAGE_UP   &trans        &trans     &trans     &trans    &kp PG_DN  &trans  &trans
+                &trans        &kp LEFT_GUI  &trans     &lt 3 RET  &kp DEL   &trans
             >;
         };
 
         NUM {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &kp N4  &kp N5  &kp N6  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &kp N7  &kp N8  &kp N9  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &trans         &trans  &trans  &trans  &trans  &trans
+&trans  &kp N4  &kp N5  &kp N6  &trans         &trans  &trans  &trans  &trans  &trans
+&trans  &kp N7  &kp N8  &kp N9  &trans         &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &lt 3 SPACE    &trans  &trans  &trans
+            >;
+        };
+
+        COM {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
