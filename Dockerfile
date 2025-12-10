@@ -2,16 +2,19 @@ FROM zmkfirmware/zmk-build-arm:3.5-branch
 
 WORKDIR /workspace
 
-# Copy the entire project into the container
-COPY . /workspace
+# Copy only west.yml first to cache dependencies layer
+COPY config/west.yml ./config/west.yml
 
-# Initialize West and fetch dependencies
+# Initialize West and fetch dependencies (this layer will be cached)
 RUN west init -l config && \
     west update && \
     west update
 
 # Set CMAKE_PREFIX_PATH for builds
 ENV CMAKE_PREFIX_PATH="/workspace/zephyr:$CMAKE_PREFIX_PATH"
+
+# Now copy the rest of the project (changes won't invalidate dependency cache)
+COPY . /workspace
 
 # Create build output directory
 RUN mkdir -p /workspace/bin
