@@ -2,7 +2,7 @@ file_format: "1"
 id: cygnus
 name: cygnus keyboard
 type: shield
-requires: [pro_micro]
+requires: [nice_nano]
 exposes: [i2c_oled]
 features:
   - keys
