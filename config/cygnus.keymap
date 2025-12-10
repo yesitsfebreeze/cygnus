@@ -227,5 +227,14 @@
                    &trans     &trans     &trans       &trans  &trans  &trans
             >;
         };
+
+        QWERTY {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
     };
 };
