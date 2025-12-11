@@ -82,19 +82,19 @@
 
     behaviors {
         mtc: mod_tap_custom {
-          compatible = "zmk,behavior-hold-tap";
-          #binding-cells = <2>;
-          tapping-term-ms = <TAPPING_TERM>;
-          flavor = "tap-preferred";
-          bindings = <&kp>, <&kp>;
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
         };
-        
+
         ltc: layer_tap_custom {
-          compatible = "zmk,behavior-hold-tap";
-          #binding-cells = <2>;
-          tapping-term-ms = <TAPPING_TERM>;
-          flavor = "tap-preferred";
-          bindings = <&mo>, <&kp>;
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
         };
 
         bspc: bspc {
@@ -131,7 +131,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-        };  
+        };
 
         lparen: lparen {
             compatible = "zmk,behavior-mod-morph";
@@ -185,29 +185,29 @@
         NOR {
             display-name = "Base";
             bindings = <
-&gresc            &kp L  &kp W      &kp D    &kp Y             &kp J            &kp U     &kp M     &kp O  &kp LS(F12)
-&mtc LEFT_SHIFT A  &kp R  &kp S      &kp T    &kp G             &kp H            &kp N     &kp E     &kp I  &kp P
-&kp Z             &kp X  &kp C      &kp V    &kp LEFT_SHIFT    &kp RIGHT_SHIFT  &kp F     &kp B     &kp K  &kp Q
-                         &kp LCTRL  &kp TAB  &ltc L1 SPACE      &ltc L2 RET       &kp BSPC  &kp LGUI
+&gresc             &kp L  &kp W      &kp D    &kp Y             &kp J            &kp U     &kp M     &kp O  &kp LS(F12)
+&mtc LEFT_SHIFT R  &kp A  &kp S      &kp T    &kp G             &kp H            &kp N     &kp E     &kp I  &kp P
+&kp Z              &kp X  &kp C      &kp V    &kp LEFT_SHIFT    &kp RIGHT_SHIFT  &kp F     &kp B     &kp K  &kp Q
+                          &kp LCTRL  &kp TAB  &ltc L1 SPACE     &ltc L2 RET      &kp BSPC  &kp LGUI
             >;
         };
 
         NAV {
             bindings = <
-&trans          &kp HOME        &kp UP_ARROW  &kp END        &lbracket    &rbracket  &trans   &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &lparen      &rparen    &dot     &comma  &trans  &trans
-&trans          &kp PAGE_UP     &kp C_PP      &kp PAGE_DOWN  &trans       &trans     &trans   &trans  &trans  &trans
+&trans          &kp HOME        &kp UP_ARROW  &kp END        &lbracket    &rbracket   &trans   &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &lparen      &rparen     &dot     &comma  &trans  &trans
+&trans          &kp PAGE_UP     &kp C_PP      &kp PAGE_DOWN  &trans       &trans      &trans   &trans  &trans  &trans
                                 &trans        &kp LEFT_GUI   &trans       &ltc 3 RET  &kp DEL  &trans
             >;
         };
 
         NUM {
             bindings = <
-&trans          &kp N1  &kp N2  &kp N3  &kp EQUAL      &trans       &trans     &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0         &trans       &dot       &comma  &trans  &trans
-&trans          &kp N7  &kp N8  &kp N9  &kp SLASH      &kp PERCENT  &kp ASTRK  &slash  &trans  &trans
+&trans          &kp N1  &kp N2  &kp N3  &kp EQUAL       &trans       &trans     &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0          &trans       &dot       &comma  &trans  &trans
+&trans          &kp N7  &kp N8  &kp N9  &kp SLASH       &kp PERCENT  &kp ASTRK  &slash  &trans  &trans
                         &trans  &trans  &ltc 3 SPACE    &trans       &trans     &trans
-            >; 
+            >;
         };
 
         COM {
