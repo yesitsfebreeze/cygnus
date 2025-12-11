@@ -186,7 +186,7 @@
             display-name = "Base";
             bindings = <
 &gresc             &kp L  &kp W      &kp D    &kp Y             &kp J            &kp U     &kp M     &kp O  &kp LS(F12)
-&mtc LEFT_SHIFT R  &kp A  &kp S      &kp T    &kp G             &kp H            &kp N     &kp E     &kp I  &kp P
+&mtc LEFT_SHIFT A  &kp R  &kp S      &kp T    &kp G             &kp H            &kp N     &kp E     &kp I  &kp P
 &kp Z              &kp X  &kp C      &kp V    &kp LEFT_SHIFT    &kp RIGHT_SHIFT  &kp F     &kp B     &kp K  &kp Q
                           &kp LCTRL  &kp TAB  &ltc L1 SPACE     &ltc L2 RET      &kp BSPC  &kp LGUI
             >;
