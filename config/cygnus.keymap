@@ -112,7 +112,7 @@
             bindings = <&kp SLASH>, <&kp BACKSLASH>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         dot: dot {
@@ -121,7 +121,7 @@
             bindings = <&kp DOT>, <&kp COLON>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         comma: comma {
@@ -130,7 +130,7 @@
             bindings = <&kp COMMA>, <&kp SEMI>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         lparen: lparen {
@@ -139,7 +139,7 @@
             bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         rparen: rparen {
@@ -148,7 +148,7 @@
             bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         lbracket: lbracket {
@@ -157,7 +157,7 @@
             bindings = <&kp LEFT_BRACKET>, <&kp LESS_THAN>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         rbracket: rbracket {
@@ -166,7 +166,7 @@
             bindings = <&kp RIGHT_BRACKET>, <&kp GREATER_THAN>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         colon: colon {
@@ -175,7 +175,7 @@
             bindings = <&kp COLON>, <&kp SEMI>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         quotes: quotes {
