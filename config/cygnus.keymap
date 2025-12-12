@@ -203,10 +203,10 @@
 
         NUM {
             bindings = <
-&trans          &kp N1  &kp N2  &kp N3  &kp EQUAL       &trans       &trans     &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0          &trans       &dot       &comma  &trans  &trans
-&trans          &kp N7  &kp N8  &kp N9  &kp SLASH       &kp PERCENT  &kp ASTRK  &slash  &trans  &trans
-                        &trans  &trans  &ltc 3 SPACE    &trans       &trans     &trans
+&trans          &kp N1  &kp N2  &kp N3  &kp EQUAL       &trans       &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0          &trans       &trans  &trans  &trans  &trans
+&trans          &kp N7  &kp N8  &kp N9  &kp SLASH       &kp PERCENT  &dot    &comma  &trans  &slash
+                        &trans  &trans  &ltc 3 SPACE    &trans       &trans  &trans
             >;
         };
 
