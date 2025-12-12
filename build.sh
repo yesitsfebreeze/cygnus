@@ -11,11 +11,9 @@ mkdir -p bin
 
 git pull
 
-# Build the Docker image
-docker build -t cygnus-zmk-build .
-
-# Run the build container
-docker run --rm -v "$(pwd)/bin:/workspace/bin" cygnus-zmk-build
+# Build and run the Docker container
+docker-compose up --build --abort-on-container-exit
+docker-compose down
 
 echo ""
 echo "✓ Build complete!"
