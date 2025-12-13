@@ -191,8 +191,10 @@
     combos {
         compatible = "zmk,combos";
 
-        Co {
-            bindings = <&mo 3>;
+        ComboLayer {
+            timeout-ms = <250>;
+            slow-release;
+            bindings = <&mo L3>;
             key-positions = <32 33>;
         };
     };
