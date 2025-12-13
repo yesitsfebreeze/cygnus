@@ -214,19 +214,19 @@
 
         NAV {
             bindings = <
-&trans          &kp HOME        &kp UP_ARROW  &kp END        &lbracket    &rbracket   &trans   &trans   &trans  &trans
-&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &lparen      &rparen     &colon   &quotes  &trans  &trans
-&trans          &kp PAGE_UP     &kp C_PP      &kp PAGE_DOWN  &trans       &trans      &dot     &comma   &trans  &trans
-                                &trans        &kp LEFT_GUI   &trans       &ltc 3 RET  &kp DEL  &trans
+&trans          &kp HOME        &kp UP_ARROW  &kp END        &lbracket    &rbracket  &trans   &trans   &trans  &trans
+&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &lparen      &rparen    &colon   &quotes  &trans  &trans
+&trans          &kp PAGE_UP     &kp C_PP      &kp PAGE_DOWN  &trans       &trans     &dot     &comma   &trans  &trans
+                                &trans        &kp LEFT_GUI   &trans       &trans     &kp DEL  &trans
             >;
         };
 
         NUM {
             bindings = <
-&trans          &kp N1  &kp N2  &kp N3  &kp EQUAL       &trans       &trans  &trans   &trans  &trans
-&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0          &trans       &colon  &quotes  &trans  &trans
-&trans          &kp N7  &kp N8  &kp N9  &kp SLASH       &kp PERCENT  &dot    &comma   &trans  &slash
-                        &trans  &trans  &ltc 3 SPACE    &trans       &trans  &trans
+&trans          &kp N1  &kp N2  &kp N3  &kp EQUAL    &trans       &trans  &trans   &trans  &trans
+&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0       &trans       &colon  &quotes  &trans  &trans
+&trans          &kp N7  &kp N8  &kp N9  &kp SLASH    &kp PERCENT  &dot    &comma   &trans  &slash
+                        &trans  &trans  &trans       &trans       &trans  &trans
             >;
         };
 
